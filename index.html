@@ -31,6 +31,36 @@
   </head>
   <body> 
 
+    <!-- MODALS
+    ================================================== -->
+    <div class="modal fade" id="modal-video" tabindex="-1" role="dialog" aria-labelledby="modal-video-header" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-video modal-lg" role="document">
+        <div class="modal-content">
+
+          <!-- Header -->
+          <div class="modal-header">
+
+            <!-- Title -->
+            <h4 class="modal-title text-white" id="modal-video-header">
+              Abranova Inc.
+            </h4>
+
+            <!-- Close -->
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+
+          </div>
+          <div class="modal-body">
+        
+            <!-- Video -->
+            <video src="assets/video/1.mp4" class="img-fluid" controls></video>
+
+          </div>
+        </div> <!-- / .modal-content -->
+      </div> <!-- / .modal-dialog -->
+    </div> <!-- / .modal -->
+
     <!-- NAVBAR
     ================================================= -->
     <nav class="navbar navbar-expand-xl navbar-dark  navbar-togglable  fixed-top">
@@ -51,10 +81,13 @@
 
           <!-- Social -->
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item-divider">
-              <span class="nav-link">
-                <span></span>
-              </span>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="fab fa-linkedin"></i> 
+                <span class="d-xl-none ml-2">
+                  LinkedIn
+                </span>
+              </a>
             </li>
             <li class="nav-item">
               <a href="#" class="nav-link">
@@ -77,6 +110,14 @@
                 <i class="fab fa-instagram"></i> 
                 <span class="d-xl-none ml-2">
                   Instagram
+                </span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="fab fa-youtube"></i> 
+                <span class="d-xl-none ml-2">
+                  Youtube
                 </span>
               </a>
             </li>
@@ -160,13 +201,13 @@
           <div class="col-md-8 col-lg-5 align-self-end">
 
             <!-- Preheading -->
-            <p class="font-weight-medium text-xs text-uppercase text-white text-muted" data-toggle="animation" data-animation="fadeUp" data-animation-order="0" data-animation-trigger="load">
-              Invest
-            </p>
+            <!-- <p class="font-weight-medium text-xs text-uppercase text-white text-muted" data-toggle="animation" data-animation="fadeUp" data-animation-order="0" data-animation-trigger="load">
+               Invest
+            </p> -->
             
             <!-- Heading -->
             <h1 class="text-white mb-4" data-toggle="animation" data-animation="fadeUp" data-animation-order="1" data-animation-trigger="load">
-              Browse Projects, Invest, Relax & Cash In
+              Invest, Anayze & Build for future.
             </h1>
 
             <!-- Subheading -->
@@ -176,7 +217,7 @@
 
             <!-- Button -->
             <div class="mb-5 mb-md-0" data-toggle="animation" data-animation="fadeUp" data-animation-order="3" data-animation-trigger="load">
-              <a href="#" target="_blank" class="btn btn-outline-primary text-white">
+              <a href="#" target="_blank" class="btn btn-outline-white text-white">
                 Invest
               </a>
             </div>
@@ -204,7 +245,7 @@
           
             <!-- Heading -->
             <h2 class="mb-4 text-center">
-              How it Works
+              Our Perfomance
             </h2>
 
             <!-- Subheading -->
@@ -215,70 +256,93 @@
           </div>
         </div> <!-- / .row -->
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-md-3">
 
             <!-- Item -->
             <div class="mb-5 mb-md-0">
               
               <!-- Icon -->
               <div class="text-center text-primary mb-4">
-                <span class="icon-drawing icon-2x"></span>
+                <img src="./assets/ico/projects_icon.svg" style="max-width: 100px; max-height: 100px;"/>
               </div>
 
               <!-- Heading -->
               <h4 class="text-center mb-3">
-                Data Analytics
+                PROJECTS
               </h4>
 
               <!-- Content -->
               <p class="text-center text-muted mb-0">
-                Realize profitable real estate investment opportunities using Data Analytics.
+                In development accross United States
               </p>
 
             </div>
 
           </div>
-          <div class="col-md-4">
+          <div class="col-md-3">
 
             <!-- Item -->
             <div class="mb-5 mb-md-0">
               
               <!-- Icon -->
               <div class="text-center text-primary mb-4">
-                <span class="icon-puzzle icon-2x"></span>
+                <img src="./assets/ico/invest_icon.svg" style="max-width: 130px; max-height: 130px;"/>
               </div>
 
               <!-- Heading -->
               <h4 class="text-center mb-3">
-                Control Proposition
+                INVESTED 
               </h4>
 
               <!-- Content -->
               <p class="text-center text-muted mb-0">
-                Get-to-work with top engineers, market data analysts and technologists to control the entire value proposition.
+                In our projects accross the United States
               </p>
 
             </div>
 
           </div>
-          <div class="col-md-4">
+          <div class="col-md-3">
+
+            <!-- Item -->
+            <div class="mb-5 mb-md-0">
+              
+              <!-- Icon -->
+              <div class="text-center text-primary mb-4">
+                <img src="./assets/ico/employee_icon.svg" style="max-width: 100px; max-height: 100px;"/>
+              </div>
+
+              <!-- Heading -->
+              <h4 class="text-center mb-3">
+                EMPLOYEES
+              </h4>
+
+              <!-- Content -->
+              <p class="text-center text-muted mb-0">
+                In development accross United States
+              </p>
+
+            </div>
+
+          </div>
+          <div class="col-md-3">
 
             <!-- Item -->
             <div>
               
               <!-- Icon -->
               <div class="text-center text-primary mb-4">
-                <span class="icon-home icon-2x"></span>
+                <img src="./assets/ico/location_icon.svg" style="max-width: 100px; max-height: 85px;"/>
               </div>
 
               <!-- Heading -->
               <h4 class="text-center mb-3">
-                Deliver Properties
+                LOCATIONS
               </h4>
 
               <!-- Content -->
               <p class="text-center text-muted mb-0">
-                Deliver excellent properties to the market while creating maximum value for our investors.
+                In development accross United States
               </p>
 
             </div>
@@ -291,7 +355,7 @@
 
     <!-- FEATURES
     ================================================== -->
-    <section class="section">
+    <section class="section" style="padding-top: 0rem;">
 
       <!-- Content -->
       <div class="container">
@@ -446,72 +510,52 @@
           <div class="col-md-4">
             
             <!-- Button -->
-            <a href="contact.html" class="btn btn-outline-primary text-white">
+            <a href="#" class="btn btn-outline-white text-white">
               Get in touch with us
             </a>
 
           </div>
         </div> <!-- / .row -->
       </div> <!-- / .container -->
-
     </section>
-
-
-    <!-- PROMO
-    ================================================== -->
-    <section class="section bg-light">
-
-      <!-- Triangles -->
-      <div class="bg-triangle bg-triangle-dark bg-triangle-top bg-triangle-left"></div>
-      <div class="bg-triangle bg-triangle-dark bg-triangle-bottom bg-triangle-right"></div>
       
       <!-- Content -->
-      <div class="container">
-        <div class="row">
-          <div class="col">
+      <section class="section">
 
-            <!-- Image -->
-            <div class="text-center">
-              <img src="assets/img/40.jpg" alt="..." class="img-fluid">
-            </div>
-
-            <!-- Content -->
-            <div class="row justify-content-center mt-5 mt-md-n10">
-              <div class="col-md-10 col-lg-8 col-xl-6">
-                
-                <!-- Promo -->
-                <div class="bg-white text-center shadow py-5 px-5">
-
-                  <!-- Icon -->
-                  <div class="mb-4">
-                    <span class="icon-home icon-2x"></span>
-                  </div>
-                  
-                  <!-- Heading -->
-                  <h3 class="text-center mb-4">
-                    Feel home again.
-                  </h3>
-                  
-                  <!-- Content -->
-                  <p class="text-muted text-center">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta eum vel qui natus sit quas suscipit aperiam deserunt voluptatum.
-                  </p>
-
-                  <!-- Button -->
-                  <a href="#" class="btn btn-outline-primary">
-                    Schedule a showing
-                  </a>
-
-                </div>
-
+        <!-- Content -->
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-6 col-lg-5 offset-lg-1">
+              
+              <!-- Image -->
+              <div class="img-effect img-effect-solid mb-5 mb-md-0">
+                <img src="assets/img/41.jpg" class="img-fluid" alt="...">
               </div>
-            </div> <!-- / .row -->
-
-          </div>
-        </div> <!-- / .row -->
-      </div> <!-- / .container -->
-
-    </section>
+  
+            </div>
+            <div class="col-md-6 col-lg-4 offset-lg-1">
+  
+              <!-- Heading -->
+              <h2 class="mb-4">
+                Everything you need to enjoy your living
+              </h2>
+  
+              <!-- Content -->
+              <p class="text-muted">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, maiores, aperiam. Excepturi assumenda non quasi ipsa quidem.
+              </p>
+  
+              <!-- Button -->
+              <a href="#modal-video" data-toggle="modal" class="btn btn-outline-primary btn-circle mr-3">
+                <i class="fas fa-play"></i>
+              </a> Play Video
+              
+            </div>
+          </div> <!-- / .row -->
+        </div> <!-- / .container -->
+  
+      </section>
+    
     
     <section>
       <div class="container section pb-0 mb-5">
@@ -520,93 +564,84 @@
 
             <h3 class="text-left mb-4">
               LATEST NEWS.
-            </h3>
-            
-            <a class="row align-items-center text-nounderline" href="blog-post.html">
-              <div class="col-12 col-md-3">
-                
-                <!-- Image -->
-                <img src="assets/img/22.jpg" alt="..." class="img-fluid mb-3 mb-md-0">
+            </h3> 
 
+            <div class="row align-items-stretch">
+              <div class="col-12 col-lg-6 mb-4 mb-lg-0">
+                
+                <a class="card h-100" href="#">
+                  <div class="card-body">
+    
+                    <!-- Meta -->
+                    <div class="row align-items-center no-gutters mb-4">
+                      <div class="col-auto">
+                        
+                        <div class="avatar mr-3">
+                          <img src="assets/img/16.jpg" alt="..." class="img-cover rounded-circle">
+                        </div>
+    
+                      </div>
+                      <div class="col">
+                        
+                        <p class="mb-0 text-xs text-muted">
+                          by <strong class="text-body">John Doe</strong> 5 hours ago
+                        </p>
+    
+                      </div>
+                    </div> <!-- / .row -->
+                    
+                    <!-- Heading -->
+                    <h4>
+                      Enhance your brand potential with giant advertising
+                    </h4>
+    
+                    <!-- Text -->
+                    <p class="mb-0 text-sm text-muted">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit Lorem ipsum dolor sit amet, consectetur adipisicing elit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </p>
+    
+                  </div>
+                </a>
+    
               </div>
-              <div class="col-12 col-md-9">
+              <div class="col-12 col-lg-6 mb-4 mb-lg-0">
                 
-                <!-- Meta -->
-                <p class="mb-2 text-xs text-muted">
-                  by <strong class="text-body">John Doe</strong> 5 days ago
-                </p>
-                
-                <!-- Heading -->
-                <h4>
-                  Why do you need to join an affiliate marketing network
-                </h4>
-
-                <!-- Text -->
-                <p class="mb-0 text-sm text-muted">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                </p>
-
-              </div>
-            </a> <!-- / .row -->
-
-            <hr class="my-4">
-
-            <a class="row align-items-center text-nounderline" href="blog-post.html">
-              <div class="col-12 col-md-3">
-                
-                <!-- Image -->
-                <img src="assets/img/24.jpg" alt="..." class="img-fluid mb-3 mb-md-0">
-
-              </div>
-              <div class="col-12 col-md-9">
-                
-                <!-- Meta -->
-                <p class="mb-2 text-xs text-muted">
-                  by <strong class="text-body">Judy Doe</strong> 5 days ago
-                </p>
-                
-                <!-- Heading -->
-                <h4>
-                  Free classifieds using them to promote your stuff online
-                </h4>
-
-                <!-- Text -->
-                <p class="mb-0 text-sm text-muted">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                </p>
-
-              </div>
-            </a> <!-- / .row -->
-
-            <hr class="my-4">
-
-            <a class="row align-items-center text-nounderline" href="blog-post.html">
-              <div class="col-12 col-md-3">
-                
-                <!-- Image -->
-                <img src="assets/img/59.jpg" alt="..." class="img-fluid mb-3 mb-md-0">
-
-              </div>
-              <div class="col-12 col-md-9">
-                
-                <!-- Meta -->
-                <p class="mb-2 text-xs text-muted">
-                  by <strong class="text-body">Jane Roe</strong> 6 days ago
-                </p>
-                
-                <!-- Heading -->
-                <h4>
-                  Are you ready to buy a home theater audio system
-                </h4>
-
-                <!-- Text -->
-                <p class="mb-0 text-sm text-muted">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                </p>
-
-              </div>
-            </a> <!-- / .row --> 
-
+                <a class="card h-100" href="blog-post.html">
+                  <div class="card-body">
+    
+                    <!-- Meta -->
+                    <div class="row align-items-center no-gutters mb-4">
+                      <div class="col-auto">
+                        
+                        <div class="avatar mr-3">
+                          <img src="assets/img/18.jpg" alt="..." class="img-cover rounded-circle">
+                        </div>
+    
+                      </div>
+                      <div class="col">
+                        
+                        <p class="mb-0 text-xs text-muted">
+                          by <strong class="text-body">Jane Roe</strong> 1 day ago
+                        </p>
+    
+                      </div>
+                    </div> <!-- / .row -->
+                    
+                    <!-- Heading -->
+                    <h4>
+                      Promotional advertising speciality you've waited enough
+                    </h4>
+    
+                    <!-- Text -->
+                    <p class="mb-0 text-sm text-muted">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </p>
+    
+                  </div>
+                </a>
+    
+              </div> 
+            </div> 
           </div>
         </div> <!-- / .row -->
       </div> <!-- / .container -->
@@ -614,7 +649,7 @@
     
     <!-- FOOTER
     ================================================== -->
-    <footer class="section bg-dark">
+    <footer class="section bg-gradient" style="margin-bottom: 0px;">
 
       <!-- Triangles -->
       <div class="bg-triangle bg-triangle-light bg-triangle-bottom bg-triangle-left"></div>
@@ -631,23 +666,85 @@
                 <img src="assets/ico/abranova_red_logo.jpg" style="max-width: 70px; max-width: 70px;"/>
               </a>
             </p>
+
+            <p class="text-white text-muted">
+              <small>
+                &copy; Copyright <span class="current-year"></span> Abranova Inc. All rights reserved.
+              </small>
+            </p>
         
+          </div>
+          <div class="col-md align-items-center">
+        
+            <!-- Links -->
+            <ul class="list-unstyled list-inline text-md-center">
+              <li class="list-inline-item mr-2">
+                <a href="#" class="text-white">
+                  <strong>Follow us for the latest opportunity</strong>
+                </a>
+              </li> 
+            </ul>
+
+            <ul class="list-inline list-unstyled text-md-center">
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fab fa-linkedin" style="color: aliceblue;"></i>
+                </a>
+              </li>
+              <li class="list-inline-item ml-3">
+                <a href="#">
+                  <i class="fab fa-twitter" style="color: aliceblue;"></i>
+                </a>
+              </li>
+              <li class="list-inline-item ml-3">
+                <a href="#">
+                  <i class="fab fa-instagram" style="color: aliceblue;"></i>
+                </a>
+              </li>
+              <li class="list-inline-item ml-3">
+                <a href="#">
+                  <i class="fab fa-facebook" style="color: aliceblue;"></i>
+                </a>
+              </li>
+              <li class="list-inline-item ml-3">
+                <a href="#">
+                  <i class="fab fa-youtube" style="color: aliceblue;"></i>
+                </a>
+              </li>
+            </ul>
+
+            <ul class="list-unstyled text-md-center">
+              <li>
+                <h6 style="color: aliceblue; font-style: normal; font-weight: 100;">Abranova Inc.</h6>
+              </li>
+              <li>
+                <h6 style="color: aliceblue; font-style: normal; font-weight: 100;">400 West Main Street, Suite# 614</h6>
+              </li>
+              <li>
+                <h6 style="color: aliceblue; font-style: normal; font-weight: 100;">Durham, NC 27701 USA</h6>
+              </li>
+              <li>
+                <h6 style="color: aliceblue; font-style: normal; font-weight: 100;">(919) 597-0223</h6>
+              </li>
+
+            </ul>
+
           </div>
           <div class="col-md">
         
             <!-- Links -->
-            <ul class="list-unstyled list-inline text-md-right">
-              <li class="list-inline-item mr-2">
+            <ul class="list-unstyled text-md-center">
+              <li class="mr-2">
                 <a href="#" class="text-white">
                   Terms and conditions
                 </a>
               </li>
-              <li class="list-inline-item mr-2">
+              <li class="mr-2">
                 <a href="#" class="text-white">
                   Privacy policy
                 </a>
               </li>
-              <li class="list-inline-item">
+              <li class="">
                 <a href="#" class="text-white">
                   Contact us
                 </a>
@@ -655,11 +752,12 @@
             </ul>
 
           </div>
+
+          
         </div> <!-- / .row -->
-        <div class="row align-items-center">
+        <!-- <div class="row align-items-center">
           <div class="col-md">
-        
-            <!-- Copyright -->
+         
             <p class="text-white text-muted">
               <small>
                 &copy; Copyright <span class="current-year"></span> Abranova Inc. All rights reserved.
@@ -668,8 +766,7 @@
 
           </div>
           <div class="col-md">
-        
-            <!-- Social links -->
+         
             <ul class="list-inline list-unstyled text-md-right">
               <li class="list-inline-item">
                 <a href="#">
@@ -689,8 +786,8 @@
             </ul>
 
           </div>
-        </div> <!-- / .row -->
-      </div> <!-- / .container -->
+        </div>  
+      </div>  -->
 
     </footer> 
     <script src="assets/libs/jquery/dist/jquery.min.js"></script>
