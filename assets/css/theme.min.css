@@ -29,6 +29,14 @@
     --font-family-sans-serif:"Objective",sans-serif;
     --font-family-monospace:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace
 }
+@font-face {
+    font-family: OttomatBold;
+    src: url("../fonts/Objective/OttomatBold.otf") format("opentype");
+} 
+@font-face {
+    font-family: OttomatBook;
+    src: url("../fonts/Objective/OttomatBook.otf") format("opentype");
+}
 *,::after,::before{
     box-sizing:border-box
 }
@@ -355,6 +363,11 @@ hr{
 .img-fluid{
     max-width:100%;
     height:auto
+}
+
+.video-fluid{
+    max-width:100%;
+    height:350px;
 }
 .img-thumbnail{
     padding:.25rem;
@@ -3753,10 +3766,10 @@ input[type=button].btn-block,input[type=reset].btn-block,input[type=submit].btn-
     color:#ad1f24
 }
 .navbar-dark .navbar-nav .nav-link{
-    color:#fff
+    color:#ad1f24
 }
 .navbar-dark .navbar-nav .nav-link:focus,.navbar-dark .navbar-nav .nav-link:hover{
-    color:#ad1f24
+    color:#666666
 }
 .navbar-dark .navbar-nav .nav-link.disabled{
     color:rgba(255,255,255,.25)
@@ -5365,7 +5378,7 @@ a.bg-dark:focus,a.bg-dark:hover,button.bg-dark:focus,button.bg-dark:hover{
     background-color:#1d2124!important
 }
 .bg-gradient{
-    background-image:linear-gradient(to right, #a72434, #a62434, #da1b20 )!important
+    background-image:linear-gradient(to right, #a72434, #a62434, #da1b20 )!important; 
 }
 a.bg-gradient:focus,a.bg-dark:hover,button.bg-dark:focus,button.bg-dark:hover{
     background-image:linear-gradient(to right, #a72434, #a62434, #da1b20 )!important
@@ -9723,16 +9736,22 @@ label{
         padding:3.5rem 2.5rem
     }
 }
+/* Design iFrame */
+/* .resp-iframe { 
+    border: 0;
+} */
+
 #mce-hidden-input{
     display:none
 }
 .img-effect{
     position:relative
 }
-.img-effect>img{
+.img-effect>iframe{
     position:relative;
     box-shadow:0 25px 100px -5px rgba(0,0,0,.15);
-    z-index:1
+    z-index:1;
+    border: 0; 
 }
 .img-effect-solid{
     padding-left:20%;
@@ -9745,7 +9764,7 @@ label{
     bottom:10%;
     left:0;
     right:0;
-    background-color:#f7c86f
+    background-color:#ad1f24
 }
 .img-effect-border{
     padding-left:10%;
@@ -9971,11 +9990,31 @@ label{
     bottom:-1.25rem;
     left:0;
     right:0;
-    border-top:1px solid rgba(255,255,255,.1)
+    /* Line for Setting up the boarder */
+    border-top:0px solid rgba(255,255,255,.1)
 }
 .navbar-dark .navbar-brand-svg-i{
     color:#ad1f24
 }
+
+/* Settup Logo */
+.navbar-dark .ab-logo {
+    opacity: 1;
+}
+
+.navbar-dark .dc-logo {
+    opacity: 0;
+}
+
+/* Settup Logo */
+.navbar-light .ab-logo {
+    opacity: 0;
+}
+
+.navbar-light .dc-logo {
+    opacity: 1;
+}
+
 .navbar-light{
     color:#212529
 }
@@ -10255,6 +10294,31 @@ body,html{
     background-repeat:no-repeat;
     background-position:left bottom;
     background-size:100% auto
+}
+
+.bg-bottom{
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    background-repeat:no-repeat;
+    background-position:left bottom;
+    background-size:100% auto
+}
+
+.bg-text{
+    /* position:absolute; */
+    bottom:0; 
+    /* vertical-align: bottom;  */
+    background-repeat:no-repeat;
+    background-position:left bottom; 
+    background-size:100% auto;
+    background-image:url("../ico/text_bg-01.svg")
+}
+
+.bg-bottom-bottom{
+    background-image:url("../ico/bottom_bg-01.svg")
 }
 .bg-triangle-left{
     background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100'><path d='M0 100 V 90 L 10 100 Z' fill='%23212529' fill-opacity='0.03'></path><path d='M0 90 V 80 L 10 90 Z' fill='%23212529' fill-opacity='0.045'></path><path d='M10 100 V 90 L 20 100 Z' fill='%23212529' fill-opacity='0.025'></path><path d='M0 90 H 10 V 100 Z' fill='%23212529' fill-opacity='0.06'></path></svg>")
@@ -10857,6 +10921,11 @@ body,html{
     padding-top:5rem;
     padding-bottom:5rem
 }
+.section-video{
+    position:relative;
+    padding-top:5rem;
+    padding-bottom:1rem
+}
 @media (min-width:768px){
     .section{
         padding-top:7.5rem;
@@ -10877,14 +10946,14 @@ body,html{
 }
 @media (min-width:768px){
     .section-full .container>.row{
-        min-height:calc(100vh - 7.5rem * 2)
+        min-height:calc(100vh - 7.5rem * 2); 
     }
     .section-full .container>.row:before{
         content:'';
-        min-height:inherit
+        min-height:inherit; 
     }
     .section-full.section-top>.container>.row{
-        min-height:calc(100vh - 7.5rem * 2 - 5.8125rem)
+        min-height:calc(100vh - 7.5rem * 2 - 5.8125rem); 
     }
 }
 @supports ((position:-webkit-sticky) or (position:sticky)){
