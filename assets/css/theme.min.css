@@ -10011,18 +10011,18 @@ label{
     opacity: 1;
 }
 
-.navbar-dark .dc-logo {
+/* .navbar-dark .dc-logo {
     opacity: 0;
-}
+} */
 
 /* Settup Logo */
 .navbar-light .ab-logo {
-    opacity: 0;
-}
-
-.navbar-light .dc-logo {
     opacity: 1;
 }
+
+/* .navbar-light .dc-logo {
+    opacity: 1;
+} */
 
 .navbar-light{
     color:#212529
@@ -10713,6 +10713,12 @@ body,html{
 @media (max-width:767.98px){
     .fp-section:not(:first-child) .section-top{
         padding-top:5rem
+    }
+}
+@media (max-width:767.98px){
+    .responsive-img{
+        width: 100%;
+        height: auto;
     }
 }
 .header{
