@@ -9128,9 +9128,9 @@ a.bg-grey:focus,a.bg-grey:hover,button.bg-grey:focus,button.bg-grey:hover{
 }
 @media (max-width:768px){
     .abranova-white{
-        color:var(--white)!important;
+        color:var(--primary)!important;
         -webkit-text-stroke-width: 1px;
-        -webkit-text-stroke-color: var(--primary);
+        -webkit-text-stroke-color: var(--white);
     }
     .bg-text > p {
         display: none;
