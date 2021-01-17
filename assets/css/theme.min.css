@@ -2403,7 +2403,7 @@ a.btn.disabled,fieldset:disabled a.btn{
 .btn-outline-white{
     color:#faf9f9;
     border-color:#faf9f9
-}
+} 
 .btn-outline-white:hover{
     color:#fff;
     background-color:#faf9f9;
@@ -3766,11 +3766,11 @@ input[type=button].btn-block,input[type=reset].btn-block,input[type=submit].btn-
     color:#ad1f24
 }
 .navbar-light .navbar-toggler{
-    color:#212529;
+    color:#ad1f24;
     border-color:transparent
 }
 .navbar-light .navbar-toggler-icon{
-    background-image:url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23212529' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E")
+    background-image:url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: Adobe Illustrator 23.0.5, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3Csvg version='1.1' id='bold' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 512 512' style='enable-background:new 0 0 512 512;' xml:space='preserve'%3E%3Cstyle type='text/css'%3E .st0%7Bfill:%23AD1F24;%7D%0A%3C/style%3E%3Cpath class='st0' d='M422.8,452.2H89.2C71.9,452.2,58,438.2,58,421v0c0-17.2,13.9-31.2,31.2-31.2h333.7c17.2,0,31.2,13.9,31.2,31.2 v0C454,438.2,440.1,452.2,422.8,452.2z'/%3E%3Cpath class='st0' d='M422.8,287.2H89.2C71.9,287.2,58,273.2,58,256v0c0-17.2,13.9-31.2,31.2-31.2h333.7c17.2,0,31.2,13.9,31.2,31.2 v0C454,273.2,440.1,287.2,422.8,287.2z'/%3E%3Cpath class='st0' d='M422.8,122.2H89.2C71.9,122.2,58,108.2,58,91v0c0-17.2,13.9-31.2,31.2-31.2h333.7c17.2,0,31.2,13.9,31.2,31.2v0 C454,108.2,440.1,122.2,422.8,122.2z'/%3E%3C/svg%3E%0A")
 }
 .navbar-light .navbar-text{
     color:#212529
@@ -3800,11 +3800,11 @@ input[type=button].btn-block,input[type=reset].btn-block,input[type=submit].btn-
     color:#ad1f24
 }
 .navbar-dark .navbar-toggler{
-    color:#fff;
+    color:#ad1f24;
     border-color:transparent
 }
 .navbar-dark .navbar-toggler-icon{
-    background-image:url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E")
+    background-image:url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: Adobe Illustrator 23.0.5, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3Csvg version='1.1' id='bold' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 512 512' style='enable-background:new 0 0 512 512;' xml:space='preserve'%3E%3Cstyle type='text/css'%3E .st0%7Bfill:%23AD1F24;%7D%0A%3C/style%3E%3Cpath class='st0' d='M422.8,452.2H89.2C71.9,452.2,58,438.2,58,421v0c0-17.2,13.9-31.2,31.2-31.2h333.7c17.2,0,31.2,13.9,31.2,31.2 v0C454,438.2,440.1,452.2,422.8,452.2z'/%3E%3Cpath class='st0' d='M422.8,287.2H89.2C71.9,287.2,58,273.2,58,256v0c0-17.2,13.9-31.2,31.2-31.2h333.7c17.2,0,31.2,13.9,31.2,31.2 v0C454,273.2,440.1,287.2,422.8,287.2z'/%3E%3Cpath class='st0' d='M422.8,122.2H89.2C71.9,122.2,58,108.2,58,91v0c0-17.2,13.9-31.2,31.2-31.2h333.7c17.2,0,31.2,13.9,31.2,31.2v0 C454,108.2,440.1,122.2,422.8,122.2z'/%3E%3C/svg%3E%0A")
 }
 .navbar-dark .navbar-text{
     color:#fff
@@ -9065,6 +9065,12 @@ a.bg-grey:focus,a.bg-grey:hover,button.bg-grey:focus,button.bg-grey:hover{
         text-align:center!important
     }
 }
+
+@media (max-width:768px){ 
+    .text-md-right{
+        text-align:right!important
+    } 
+}
 @media (min-width:992px){
     .text-lg-left{
         text-align:left!important
@@ -9116,6 +9122,19 @@ a.bg-grey:focus,a.bg-grey:hover,button.bg-grey:focus,button.bg-grey:hover{
 }
 .text-white{
     color:#fff!important
+}
+.abranova-white{
+    color:#fff!important
+}
+@media (max-width:768px){
+    .abranova-white{
+        color:var(--white)!important;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: var(--primary);
+    }
+    .bg-text > p {
+        display: none;
+    }
 }
 .text-primary{
     color:#ad1f24!important
@@ -10339,6 +10358,12 @@ body,html{
     background-image:url("../ico/text_bg-01.svg")
 }
 
+@media (max-width:768px){
+    .bg-text{
+        background-image: none;
+    }
+}
+
 .bg-bottom-bottom{
     background-image:url("../ico/bottom_bg-01.svg")
 }
@@ -10435,6 +10460,9 @@ body,html{
     font-size:1rem!important
 }
 .text-white.text-muted{
+    color:rgba(255,255,255,.65)!important
+}
+.abranova-white.text-muted{
     color:rgba(255,255,255,.65)!important
 }
 .text-vertical{
