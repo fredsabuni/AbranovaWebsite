@@ -1,7 +1,7 @@
  
 <!doctype html>
 <html lang="en">
-<meta http-equiv="content-type" content="text/html;charset=utf-8" /> 
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" /> 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -24,9 +24,15 @@
     <link rel="stylesheet" href="<?php echo base_url();?>assets/new-assets/libs/highlightjs/styles/codepen-embed.css">
     <link rel="stylesheet" href="<?php echo base_url();?>assets/new-assets/libs/%40fortawesome/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="<?php echo base_url();?>assets/new-assets/libs/incline-icons/style.min.css">
+	
+	 
 
     <!-- Theme CSS -->
     <link rel="stylesheet" href="<?php echo base_url();?>assets/new-assets/css/theme.min.css">
+	
+	<!-- CHAT BOT -->
+    <script>(function(w, d) { w.CollectId = "6004533add5fd55abf04a11b"; var h = d.head || d.getElementsByTagName("head")[0]; var s = 		d.createElement("script"); s.setAttribute("type", "text/javascript"); s.async=true; s.setAttribute("src", 					"https://collectcdn.com/launcher.js"); h.appendChild(s); })(window, document);</script>
+
 
     <title>Abranova Inc</title>
   </head>
@@ -34,33 +40,7 @@
 
     <!-- MODALS
     ================================================== -->
-    <div class="modal fade" id="modal-video" tabindex="-1" role="dialog" aria-labelledby="modal-video-header" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered modal-dialog-video modal-lg" role="document">
-        <div class="modal-content">
-
-          <!-- Header -->
-          <div class="modal-header">
-
-            <!-- Title -->
-            <h4 class="modal-title text-white" id="modal-video-header">
-              Abranova Inc.
-            </h4>
-
-            <!-- Close -->
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-
-          </div>
-          <div class="modal-body">
-        
-            <!-- Video --> 
-            <iframe width="650" height="350" class="video-fluid" src="https://www.youtube.com/embed/Omj7Mzu5OP0?rel=0&amp?landscape=0"></iframe>  
-
-          </div>
-        </div> <!-- / .modal-content -->
-      </div> <!-- / .modal-dialog -->
-    </div> <!-- / .modal -->
+     
 
     <!-- NAVBAR
     ================================================= -->
@@ -68,9 +48,9 @@
       <div class="container">
 
         <!-- Brand -->
-        <a class="navbar-brand" href="#"> 
-          <img src="<?php echo base_url();?>assets/new-assets/ico/abranova_red_logo.jpg" style="max-width: 70px; max-width: 70px;"/>
-        </a>
+        <a class="navbar-brand" href="<?php echo base_url()?>"> 
+          <img src="<?php echo base_url();?>assets/new-assets/ico/redLogo.png" style="max-width: 100px; max-width: 100px;"/>
+        </a> 
   
         <!-- Toggler -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -131,8 +111,8 @@
                 About Us
               </a> 
               <div class="dropdown-menu" aria-labelledby="navbarLandings">
-                <a class="dropdown-item " href="<?php echo base_url().'abranova/#how'?>">
-                  How it works
+                <a class="dropdown-item " href="<?php echo base_url().'abranova/#ourPerformance'?>">
+                  Our performance
                 </a>
                 <a class="dropdown-item " href="<?php echo base_url().'about-us'?>">
                   our team
@@ -208,19 +188,12 @@
     <section class="section section-top section-full">
 
       <!-- Cover -->
-      <div class="bg-cover" style="background-image: url(<?php echo base_url();?>assets/new-assets/img/38.jpg)"></div>
-
-      <!-- Overlay -->
-      <div class="bg-overlay"></div>
-
-      <!-- Triangles -->
-      <div class="bg-triangle bg-triangle-light bg-triangle-bottom bg-triangle-left"></div>
-      <div class="bg-triangle bg-triangle-light bg-triangle-bottom bg-triangle-right"></div>
+      <div class="bg-cover" style="background-image: url(<?php echo base_url();?>assets/new-assets/img/39.png)"></div>
 
       <!-- Content -->
       <div class="container">
         <div class="row">
-          <div class="col-md-8 col-lg-5 align-self-end">
+          <div class="bg-text col-md-8 col-lg-5 align-self-end">
 
             <!-- Preheading -->
             <!-- <p class="font-weight-medium text-xs text-uppercase text-white text-muted" data-toggle="animation" data-animation="fadeUp" data-animation-order="0" data-animation-trigger="load">
@@ -228,145 +201,126 @@
             </p> -->
             
             <!-- Heading -->
-            <h1 class="text-white mb-4" data-toggle="animation" data-animation="fadeUp" data-animation-order="1" data-animation-trigger="load">
-              Invest, Anayze & Build for future.
-            </h1>
+            <h1 class="abranova-white mb-4" data-toggle="animation" data-animation="fadeUp" data-animation-order="1" data-animation-trigger="load" style="margin-top: 16px; font-size: 40px;  font-family: 'OttomatBold';">
+              Invest in a Better<br/> 
+              Future Today.
+            </h1> 
 
-            <!-- Subheading -->
-            <p class="text-white text-muted mb-5" data-toggle="animation" data-animation="fadeUp" data-animation-order="2" data-animation-trigger="load">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis provident et ab, ullam in quidem nostrum quo sunt beatae odio fugit.
+            <p class="abranova-white mb-5" data-toggle="animation" data-animation="fadeUp" data-animation-order="2" data-animation-trigger="load" style="font-family: 'OttomatBold'; ">
+              We want you to be a part of this journey with us!
             </p>
 
             <!-- Button -->
             <div class="mb-5 mb-md-0" data-toggle="animation" data-animation="fadeUp" data-animation-order="3" data-animation-trigger="load">
-              <a href="#" target="_blank" class="btn btn-outline-white text-white">
+              <a href="#" target="_blank" class="btn btn-outline-white text-white" style="margin-bottom: 16px;">
                 Invest
               </a>
-            </div>
+            </div> 
 
           </div>
-          <div class="col-md-4 col-lg-7 align-self-center d-flex justify-content-end">
-            
-            <!-- Heading -->
-            <h4 class="text-vertical text-white mb-0">
-              <span>Abranova Inc</span>
-            </h4>
-
-          </div>
+           
         </div> <!-- / .row -->
       </div> <!-- / .container -->
 
     </section>
+	  
+	<section class="section-mobile">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-8 col-lg-5 align-self-end"> 
+            <!-- Heading -->
+            <h1 class="abranova-primary mb-4" data-toggle="animation" data-animation="fadeUp" data-animation-order="1" data-animation-trigger="load" style="margin-top: 16px; font-size: 40px;  font-family: 'OttomatBold';">
+              Invest in a Better<br/> 
+              Future Today.
+            </h1> 
 
-    <section class="section">
+            <p class="abranova-gray mb-5" data-toggle="animation" data-animation="fadeUp" data-animation-order="2" data-animation-trigger="load" style="font-family: 'OttomatBold'; ">
+              We want you to be a part of this journey with us!
+            </p>
 
+            <!-- Button -->
+            <div class="mb-5 mb-md-0" data-toggle="animation" data-animation="fadeUp" data-animation-order="3" data-animation-trigger="load">
+              <a href="#" target="_blank" class="btn btn-outline-primary abranova-primary" style="margin-bottom: 16px;">
+                Invest
+              </a>
+            </div> 
+          </div> 
+        </div>
+      </div>
+    </section>
+
+    <section class="section-video mb-0">
+		<div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-8">
+            
+            <!-- Image -->
+            <div class="img-effect img-effect-solid mb-5 mb-md-0">
+              <iframe height="350" width="700" class="video-design" src="https://www.youtube.com/embed/Omj7Mzu5OP0?rel=0&amp?landscape=0"></iframe>  
+            </div>
+ 
+
+          </div>
+          <div class="col-md-4 ">
+
+            <!-- Heading -->
+            <h2 class="mb-4" style="font-family: 'OttomatBold'; color: #ad1f24;">
+              <span style="border-style: solid; border-width: 1.5px; font-size: 24px; padding: 16px; border-color: #c2c2c2;">About Us</span> 
+            </h2>
+
+            <!-- Content -->
+            <p class="text-muted mb-0" id="ourPerformance">
+              Abranova is a full-stack real estate investment and construction development company. The core mission of the company is to democratize real estate development by providing investment opportunities to everyone through our real estate crowdfunding platform. 
+            </p> 
+          </div>
+        </div> <!-- / .row -->
+      </div> 
+    </section>
+	
+	<section class="section">
       <!-- Content -->
       <div class="container">
         <div class="row justify-content-center">
-          <div class="col-md-8 col-lg-6">
+          <div class="col-md-8 col-lg-6" style="margin-bottom: 8px;">
           
             <!-- Heading -->
-            <h2 class="mb-4 text-center">
-              Our Perfomance
-            </h2>
-
-            <!-- Subheading -->
-            <p class="text-center text-muted text-left mb-5">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo officiis odio repudiandae illum molestiae.
-            </p>
+            <h2 class="mb-4 text-center" style="font-family: 'OttomatBold'; color: #ad1f24;">
+              <span style="border-style: solid; border-width: 1.5px; font-size: 24px; padding: 16px; border-color: #c2c2c2;">Our Perfomance</span>  
+            </h2> 
           
           </div>
         </div> <!-- / .row -->
-        <div class="row">
-          <div class="col-md-3">
-
+        <div class="row " style="margin-top: 2rem;">
+          <div class="col-md-4 align-self-end"> 
             <!-- Item -->
-            <div class="mb-5 mb-md-0">
-              
+            <div> 
               <!-- Icon -->
               <div class="text-center text-primary mb-4">
-                <img src="<?php echo base_url();?>assets/new-assets/ico/projects_icon.svg" style="max-width: 100px; max-height: 100px;"/>
-              </div>
-
+                <img class="responsive-img" src="<?php echo base_url();?>assets/new-assets/ico/banner_01.svg" style="max-width: 550px; border: 1px solid rgb(209, 206, 206); max-height: 350px;"/> 
+              </div>   
+            </div> 
+          </div>
+           
+          <div class="col-md-4 text-right"> 
+            <!-- Item -->
+            <div> 
+              <!-- Icon -->
+              <div class="text-center text-primary mb-4">
+                <img class="responsive-img" src="<?php echo base_url();?>assets/new-assets/ico/banner_02.svg" style="max-width: 550px; border: 1px solid rgb(209, 206, 206); max-height: 350px;"/>
+              </div> 
               <!-- Heading -->
-              <h4 class="text-center mb-3">
-                PROJECTS
-              </h4>
-
-              <!-- Content -->
-              <p class="text-center text-muted mb-0">
-                In development accross United States
-              </p>
-
             </div>
 
           </div>
-          <div class="col-md-3">
 
+          <div class="col-md-4 text-right"> 
             <!-- Item -->
-            <div class="mb-5 mb-md-0">
-              
+            <div> 
               <!-- Icon -->
               <div class="text-center text-primary mb-4">
-                <img src="<?php echo base_url();?>assets/new-assets/ico/invest_icon.svg" style="max-width: 130px; max-height: 130px;"/>
-              </div>
-
+                <img class="responsive-img" src="<?php echo base_url();?>assets/new-assets/ico/banner_03.svg" style="max-width: 550px; border: 1px solid rgb(209, 206, 206); max-height: 350px;"/>
+              </div> 
               <!-- Heading -->
-              <h4 class="text-center mb-3">
-                INVESTED 
-              </h4>
-
-              <!-- Content -->
-              <p class="text-center text-muted mb-0">
-                In our projects accross the United States
-              </p>
-
-            </div>
-
-          </div>
-          <div class="col-md-3">
-
-            <!-- Item -->
-            <div class="mb-5 mb-md-0">
-              
-              <!-- Icon -->
-              <div class="text-center text-primary mb-4">
-                <img src="<?php echo base_url();?>assets/new-assets/ico/employee_icon.svg" style="max-width: 100px; max-height: 100px;"/>
-              </div>
-
-              <!-- Heading -->
-              <h4 class="text-center mb-3">
-                EMPLOYEES
-              </h4>
-
-              <!-- Content -->
-              <p class="text-center text-muted mb-0">
-                In development accross United States
-              </p>
-
-            </div>
-
-          </div>
-          <div class="col-md-3">
-
-            <!-- Item -->
-            <div>
-              
-              <!-- Icon -->
-              <div class="text-center text-primary mb-4">
-                <img src="<?php echo base_url();?>assets/new-assets/ico/location_icon.svg" style="max-width: 100px; max-height: 85px;"/>
-              </div>
-
-              <!-- Heading -->
-              <h4 class="text-center mb-3">
-                LOCATIONS
-              </h4>
-
-              <!-- Content -->
-              <p class="text-center text-muted mb-0">
-                In development accross United States
-              </p>
-
             </div>
 
           </div>
@@ -381,18 +335,17 @@
 
       <!-- Content -->
       <div class="container">
-        <row class="row">
-          <div class="col-9 col-md-9 col-lg-9 ">
-            <h2 class="mb-4 text-left">
-              Our Projects
-            </h2>
-            <!-- <p class="text-left text-muted text-left mb-5">
-              Working closely with our clients to help them find their dream property and place. 
-            </p> -->
-          </div> 
-          <div class="col-3 col-md-3 col-lg-3">
+		<row class="row">
+          <div class="col-12 col-md-12 col-lg-12">
+            <h2 class="mb-4 text-center" style="font-family: 'OttomatBold'; color: #ad1f24;">
+              <span style="border-style: solid; border-width: 1.5px; font-size: 24px; padding: 16px; border-color: #c2c2c2;">Our 					Projects</span>
+            </h2> 
+          </div>  
+        </row>
+        <row class="row"> 
+          <div class="col-12 col-md-12 col-lg-12">
             <h5 class="text-md-right mb-4">
-              View All
+              <a href="<?php echo base_url()?>invest-project"><span style="font-family: 'OttomatBold'; color: #ad1f24;">View All</span></a>
             </h5> 
           </div> 
         </row>
@@ -428,7 +381,10 @@
                 if($image->project_id == $row->project_id) {
                     $limit = $limit + 1;
                     if($limit == 1){
-                      echo '<div class="img-effect mb-3"> <img src="' . base_url() . $image->image_path . '"  class="img-fluid" 							alt="..."> </div>';   
+                      echo '
+					  <div class="ribbon mb-3" style="background: url('.base_url() . $image->image_path.'); background-size: cover;"> 
+                    	<span class="ribbon4" style="font-family: OttomatBold;">Completed</span>
+                	  </div> ';   
                     } 
                   }
                 } ?>
@@ -441,7 +397,7 @@
               <!-- Content -->
               <p class="text-left text-muted mb-3">
                  Investment Type: <span> <?php echo $row->project_type; ?></span>, Return on Investment (ROI): <span> <?php echo $row->project_roi; ?></span>,
-                 Expected Completion Date: <span> <?php echo date_format(date_create($row->project_cdate),'jS M | Y') ; ?>
+                 Expected Completion Date: <span> <?php echo date_format(date_create($row->project_cdate),'jS M | Y') ; ?></span>
               </p>
 
               <h6 class="mb-3">
@@ -449,25 +405,44 @@
               </h6>
 
               <!-- Button -->
-              <div class="text-center text-md-left">
+              <!--<div class="text-center text-md-left">
               <button type="submit" class="btn btn-outline-primary">
                   <a href="<?php echo base_url() .'invest/'.$row->project_id ; ?>">
                   Invest Now
                   </a>
               </button> 
-              </div>
+              </div>-->
 
             </div>
 
           </div>
            
           <?php } ?>
-
-          </div>
-        </div> <!-- / .row -->
-      </div> <!-- / .container -->
-
+          </div>  
+      </div>  
     </section>
+	<section class="section section-full"> 
+      <!-- Cover -->
+      <div class="bg-cover" style="background-image: url('<?php echo base_url();?>assets/new-assets/img/11.jpg');"></div>
+      
+      <!-- Content -->
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-md-10 col-lg-8"> 
+            <div class="bg-white text-center shadow py-5 px-4 p-md-6"> 
+              <div class="mb-4">
+                <img src="<?php echo base_url();?>assets/new-assets/ico/RTP-Logo-Red-02.png" 
+					 style="max-width: 150px; max-height: 100px;" class="icon icon-diamond icon-2x"></img>
+              </div>
+   
+              <a href="https://novartp.com/" class="btn btn-outline-primary" target="_blank">
+                Visit our Latest Project
+              </a> 
+            </div> 
+          </div>
+        </div> 
+        </div>  
+    </section> 
   
 
     <!-- CTA
@@ -485,81 +460,45 @@
             
             <!-- Heading -->
             <h3 class="text-white mb-4">
-              Schedule a call with us
+              Get to know Us
             </h3>
 
             <!-- Content -->
             <p class="text-white text-muted mb-4 mb-md-0">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae dolores, voluptates atque dicta vero quibusdam laudantium saepe sequi harum.
+              Fill out this form to connect with our business directly.
             </p>
 
           </div>
           <div class="col-md-4">
             
             <!-- Button -->
-            <a href="#" class="btn btn-outline-white text-white">
+            <a href="<?php echo base_url()?>contact-us" class="btn btn-outline-white text-white">
               Get in touch with us
             </a>
 
           </div>
         </div> <!-- / .row -->
       </div> <!-- / .container -->
-    </section>
-      
-      <!-- Content -->
-      <section class="section">
-
-        <!-- Content -->
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-md-6 col-lg-5 offset-lg-1">
-              
-              <!-- Image -->
-              <div class="img-effect img-effect-solid mb-5 mb-md-0">
-                <img src="<?php echo base_url();?>assets/new-assets/img/41.jpg" class="img-fluid" alt="...">
-              </div>
-  
-            </div>
-            <div class="col-md-6 col-lg-4 offset-lg-1">
-  
-              <!-- Heading -->
-              <h2 class="mb-4">
-                Everything you need to enjoy your living
-              </h2>
-  
-              <!-- Content -->
-              <p class="text-muted">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, maiores, aperiam. Excepturi assumenda non quasi ipsa quidem.
-              </p>
-  
-              <!-- Button -->
-              <a href="#modal-video" data-toggle="modal" class="btn btn-outline-primary btn-circle mr-3">
-                <i class="fas fa-play"></i>
-              </a> Play Video
-              
-            </div>
-          </div> <!-- / .row -->
-        </div> <!-- / .container -->
-  
-      </section>
-    
+    </section> 
     
     <section>
       <div class="container section pb-0 mb-5">
         <row class="row">
-          <div class="col-9 col-md-9 col-lg-9 ">
-            <h3 class="text-left mb-4">
-              LATEST NEWS.
+          <div class="col-12 col-md-12 col-lg-12 ">
+            <h3 class="text-center mb-4" style="font-family: 'OttomatBold'; color: #ad1f24;">
+               <span style="border-style: solid; border-width: 1.5px; font-size: 24px; padding: 16px; border-color: #c2c2c2;">Latest 					News</span>
             </h3> 
-          </div> 
-          <div class="col-3 col-md-3 col-lg-3">
-            <h5 class="text-left mb-4">
-              View All
+          </div>  
+        </row>
+		<row class="row"> 
+          <div class="col-12 col-md-12 col-lg-12">
+            <h5 class="text-md-right mb-4">
+				<a href="<?php echo base_url()?>resources"><span style="font-family: 'OttomatBold'; color: #ad1f24;">View All</span></a>
             </h5> 
           </div> 
         </row>
         <div class="row">  
-        <div class="col-12 col-md-9 col-lg-10 order-md-1">
+        <div class="col-md-12 order-md-1">
         <div class="row align-items-stretch">
         <?php
             foreach ($articles as $row){ 
@@ -568,7 +507,7 @@
               $paragraph = substr($row->article_desc, $start, $end-$start+4);
               $paragraph = html_entity_decode(strip_tags($paragraph));
               echo '  
-                <div class="col-12 col-lg-6 mb-4 mb-lg-0">
+                <div class="col-md-4 mb-4 mb-lg-0">
                 
                 <a class="card h-100" href="'.base_url().'resource/'.$row->article_id.'">
                   <div class="card-body">
@@ -597,8 +536,6 @@
                     </h4>
     
                     <!-- Text -->
-                    
-
                     <p class="mb-0 text-sm text-muted">
                       '.$paragraph.'
                     </p>
@@ -616,111 +553,54 @@
     <!-- FOOTER
     ================================================== -->
     <footer class="section bg-gradient" style="margin-bottom: 0px;">
-
-      <!-- Triangles -->
-      <div class="bg-triangle bg-triangle-light bg-triangle-bottom bg-triangle-left"></div>
-      <div class="bg-triangle bg-triangle-light bg-triangle-bottom bg-triangle-right"></div>
-
-      <!--Content -->
-      <div class="container">
-        <div class="row align-self-center">
-          <div class="col-md-auto">
-
-            <!-- Brand -->
-            <p>
-              <a href="#" class="footer-brand text-white">
-                <img src="<?php echo base_url();?>assets/new-assets/ico/abranova_red_logo.jpg" style="max-width: 70px; max-width: 70px;"/>
-              </a>
-            </p>
-
-            <p class="text-white text-muted">
-              <small>
-                &copy; Copyright <span class="current-year"></span> Abranova Inc. All rights reserved.
-              </small>
-            </p>
+		
+		<div class="bg-bottom bg-bottom-bottom"></div>
+		
+		<div class="container">
+        <div class="row align-self-center"> 
         
-          </div>
-          <div class="col-md align-items-center">
+          <!-- </div> -->
+          <div class="col-md align-items-center text-center">
         
-            <!-- Links -->
+            <!-- Links --> 
             <ul class="list-unstyled list-inline text-md-center">
               <li class="list-inline-item mr-2">
                 <a href="#" class="text-white">
-                  <strong>Follow us for the latest opportunity</strong>
+                  <img src="<?php echo base_url();?>assets/new-assets/ico/whiteLogo.png" style="max-width: 110px; max-width: 110px;"/>
+                </a>
+              </li> 
+            </ul> 
+
+            <ul class="list-unstyled list-inline text-md-center">
+              <li class="list-inline-item mr-2">
+                <a href="#" class="text-white">
+                  <small style="font-family: 'OttomatBold'; "> &copy; Copyright <span class="current-year"></span> Abranova Inc. All rights reserved. </small>
                 </a>
               </li> 
             </ul>
 
-            <ul class="list-inline list-unstyled text-md-center">
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fab fa-linkedin" style="color: aliceblue;"></i>
+            <ul class="list-unstyled list-inline text-md-center">
+              <li class="list-inline-item mr-2">
+                <a href="#" class="text-white">
+                  <h5 style="font-family: 'OttomatBold'; color: #ffffff; ">Follow us for the latest opportunity:&nbsp;&nbsp;<a href="#"><i class="fab fa-youtube" style="color: aliceblue;"></i></a>&nbsp;&nbsp;  <a href="#"><i class="fab fa-facebook" style="color: aliceblue;"></i></a> &nbsp;&nbsp; <a href="#"><i class="fab fa-instagram" style="color: aliceblue;"></i></a> &nbsp;&nbsp;<a href="#"><i class="fab fa-twitter" style="color: aliceblue;"></i></a>&nbsp;&nbsp;<a href="#"><i class="fab fa-linkedin" style="color: aliceblue;"></i></a></h5>
                 </a>
-              </li>
-              <li class="list-inline-item ml-3">
-                <a href="#">
-                  <i class="fab fa-twitter" style="color: aliceblue;"></i>
-                </a>
-              </li>
-              <li class="list-inline-item ml-3">
-                <a href="#">
-                  <i class="fab fa-instagram" style="color: aliceblue;"></i>
-                </a>
-              </li>
-              <li class="list-inline-item ml-3">
-                <a href="#">
-                  <i class="fab fa-facebook" style="color: aliceblue;"></i>
-                </a>
-              </li>
-              <li class="list-inline-item ml-3">
-                <a href="#">
-                  <i class="fab fa-youtube" style="color: aliceblue;"></i>
-                </a>
-              </li>
+              </li> 
+            </ul> 
+
+            <ul class="list-unstyled text-md-center">
+              <li>
+                <h6 style="color: aliceblue; font-style: normal; font-family: 'OttomatBold'; color: #ffffff; font-weight: 100;">Abranova Inc. 400 West Main Street, Suite# 614 Durham, NC 27701 USA (919) 597-0223</h6>
+              </li> 
             </ul>
 
             <ul class="list-unstyled text-md-center">
               <li>
-                <h6 style="color: aliceblue; font-style: normal; font-weight: 100;">Abranova Inc.</h6>
-              </li>
-              <li>
-                <h6 style="color: aliceblue; font-style: normal; font-weight: 100;">400 West Main Street, Suite# 614</h6>
-              </li>
-              <li>
-                <h6 style="color: aliceblue; font-style: normal; font-weight: 100;">Durham, NC 27701 USA</h6>
-              </li>
-              <li>
-                <h6 style="color: aliceblue; font-style: normal; font-weight: 100;">(919) 597-0223</h6>
-              </li>
-
-            </ul>
-
-          </div>
-          <div class="col-md">
-        
-            <!-- Links -->
-            <ul class="list-unstyled text-md-center">
-              <li class="mr-2">
-                <a href="#" class="text-white">
-                  Terms and conditions
-                </a>
-              </li>
-              <li class="mr-2">
-                <a href="#" class="text-white">
-                  Privacy policy
-                </a>
-              </li>
-              <li class="">
-                <a href="#" class="text-white">
-                  Contact us
-                </a>
-              </li>
-            </ul>
-
-          </div>
-
-          
-        </div>  
+                <h6 style="color: aliceblue; font-style: normal; font-family: 'OttomatBold'; color: #ffffff; font-weight: 100;">Terms and conditions&nbsp; | &nbsp;Privacy policy&nbsp; | &nbsp;Contact us</h6>
+              </li> 
+            </ul> 
+          </div> 
+ 
+        </div>
 
     </footer> 
     <script src="<?php echo base_url();?>assets/new-assets/libs/jquery/dist/jquery.min.js"></script>
