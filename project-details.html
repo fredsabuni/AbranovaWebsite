@@ -168,14 +168,17 @@
       </div>  
     </section>  
 
-    <!-- <section class="nova-section section-full" style="padding-bottom: 0rem; margin-bottom: :0rem">
+    <section class="nova-section section-full" style="padding-bottom: 0rem; margin-bottom: :0rem">
       <div class="container">
         <div class="row align-items-center justify-content-center">
           <div class="col-md-12">  
-          	  <div class="slideshowContainer"> 
- 				<img class="imageSlides" src="assets/img/SM13.jpg" alt="beach side city view">
-  				<img class="imageSlides" src="assets/img/SM15.jpg" alt="leaf on the ground">
-  				<img class="imageSlides" src="assets/img/SM22.jpg" alt="lake surrounded by mountains">
+          	  <div class="slideshowContainer">  
+  				<img class="imageSlides" src="assets/img/slider_5.png" alt="lake surrounded by mountains">
+ 				<img class="imageSlides" src="assets/img/slider_1.png" alt="beach side city view">
+  				<img class="imageSlides" src="assets/img/slider_2.png" alt="leaf on the ground">
+  				<img class="imageSlides" src="assets/img/slider_6.png" alt="lake surrounded by mountains">
+  				<img class="imageSlides" src="assets/img/slider_3.png" alt="lake surrounded by mountains">
+  				<img class="imageSlides" src="assets/img/slider_4.png" alt="lake surrounded by mountains">
    
   				<span id ="leftArrow" class="slideshowArrow">&#8249;</span>
   				<span id ="rightArrow" class="slideshowArrow">&#8250;</span>
@@ -185,105 +188,58 @@
     			<span class="circle dot"></span>
     			<span class="circle"></span>
     			<span class="circle"></span>
-  			</div>C
+    			<span class="circle"></span>
+    			<span class="circle"></span>
+    			<span class="circle"></span>
+  			</div>
 			</div>
           </div>
      </div>
  	</div>
-    </section> -->
+    </section>
 
-    <section class="nova-section section-full" style="padding-top: 0px;">
+    <section class="nova-section section-full">
+    	<div class="container">
+    		<div class="row">
+    		<div class="col-md-12"> 
+    			<h6 class="mb-4" style="padding-top: 16px; font-family: Ottomat; font-size: 17px;">
+              PROJECT VIDEO
+            </h6>   
+            <iframe width="100%" height="500" src="https://www.youtube.com/embed/4v05szeh160" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    		</div>
+    	</div> 
+    	</div> 
+    </section>
+
+    <section class="nova-section section-full" style="padding-top: 60px;">
       <div class="container">
-        <div class="row">
-          <div class="col-md-4 order-md-2 mb-md-0"> 
-            <div class="row">    
-            	   <table width="100%">
-            	   	 <tr>
-            	   	 	<td align="left" style="padding-left: 24px;">
-            	   	 	  <i class="fa fa-print" aria-hidden="true" onclick="PrintDiv();"> <span style="font-family: Ottomat;"> Print</span></i> 
-            	   	 	</td>
-            	   	 	<td align="right" style="padding-right: 24px;">
-            	   	 	  <i class="fa fa-file" aria-hidden="true"> <span style="font-family: Ottomat;" onclick="add_bookmarks(<?php echo $this->session->userdata('InvestorID');?> , <?php echo $project_item->project_id; ?>)"> Save</span></i> 
-            	   	 	</td>
-            	   	 </tr>
-            	   </table>
-            </div>
-            <!-- Heading -->
-            <h6 class="mb-4" style="padding-top: 16px; font-family: Ottomat; font-size: 17px;">
-              CALCULATE ESTIMATED RETURN
-            </h6>
-            <!-- Form -->
-            <form class="mb-5 mb-md-0">
-              <div class="form-group">
-                <label style="font-family: Ottomat;">
-                  Return on Investment(ROI): 16% - 20%
-                </label>
-                <div class="input-group">
-                  <input type="number" class="form-control order-1">
-                  <div class="input-group-append order-0">
-                    <div class="input-group-text"> 
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="form-row">
-                <div class="col-12">
-                  <div class="alert alert-primary closeable" id="resultDiv" style="display: none;">
-                       <p id="result" style="display: none;"></p>
-                        <?php if(($this->session->userdata('logged_in'))) { ?>
-                            <a class="close"></a>
-                        <?php } else { ?>
-                            <a class="close" onclick="displayCalculate()"></a>
-                     <?php } ?> 
-                  </div>
-                  <!-- Button -->
-                  <button class="btn btn-outline-primary btn-block mt-3" onclick="calculateIntrest(<?php echo $project_item->project_roi;?>)">
-                    Calculate
-                  </button> 
-                </div>
-              </div>
-            </form>
-            <hr/>
-            <h6 class="mb-4" style="padding-top: 16px; font-family: Ottomat; font-size: 17px;">
-              INSIGHT VIDEO
-            </h6>
-            <div class="row">
-              <div class="col-sm-12 order-md-1">
-                <iframe src="https://www.youtube.com/embed/3bfsmrDSSBU?landscape=1&quot;" seamless="" width="100%" height="205"></iframe>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-8">
+        <div class="row"> 
+          <div class="col-md-12">
             <!-- Nav -->
             <nav class="nav nav-tabs mb-5">
               <a href="#itemDescription" class="nav-item nav-link active" data-toggle="tab">
                 Description
               </a>
-              <a href="#itemDetails" class="nav-item nav-link" data-toggle="tab">
+             <!--  <a href="#itemDetails" class="nav-item nav-link" data-toggle="tab">
                 Details
-              </a>
+              </a> -->
               <a href="#itemLocation" class="nav-item nav-link" data-toggle="tab">
                 Location
               </a>
-            </nav>
-
+            </nav> 
             <!-- Content -->
             <div class="tab-content">
               <div class="tab-pane fade show active" id="itemDescription">
 
-                <img src="assets/img/NSM2.jpg" style="max-width: 100%; height: auto;"> 
-                <img src="assets/img/NSM8.jpg" style="max-width: 100%; height: auto;"> 
-                <img src="assets/img/NSM9.jpg" style="max-width: 100%; height: auto;"> 
-                <img src="assets/img/NSM10.jpg" style="max-width: 100%; height: auto;"> 
-                <img src="assets/img/NSM11.jpg" style="max-width: 100%; height: auto;">
-                <img src="assets/img/NSM17.jpg" style="max-width: 100%; height: auto;">  
+                <img src="assets/img/NSM2.jpg" style="max-width: 100%; height: auto;">  
+                <img src="assets/img/NSM4.jpg" style="max-width: 100%; height: auto;"> 
                 <img src="assets/img/NSM14.jpg" style="max-width: 100%; height: auto;">  
                 <img src="assets/img/NSM23.jpg" style="max-width: 100%; height: auto;"> 
+                <img src="assets/img/NSM24.jpg" style="max-width: 100%; height: auto;"> 
                 <img src="assets/img/NSM25.jpg" style="max-width: 100%; height: auto;"> 
 
               </div>
-              <div class="tab-pane fade" id="itemDetails">
+              <!-- <div class="tab-pane fade" id="itemDetails">
                 <div class="row">
                   <div class="col-md-4">
                     <p style="font-size: 14px; color:#6a6a6d; font-family: Ottomat;">
@@ -310,12 +266,15 @@
                     </p>
                   </div>
                 </div>
-              </div>
+              </div> -->
               <div class="tab-pane fade" id="itemLocation">
                 <div class="row">
                   <div class="col-12">
                     <div class="map">
                        <img src="assets/img/NSM3.jpg" style="max-width: 100%; height: auto;"> 
+                       <img src="assets/img/NSM8.jpg" style="max-width: 100%; height: auto;"> 
+                	   <img src="assets/img/NSM9.jpg" style="max-width: 100%; height: auto;"> 
+                	   <img src="assets/img/NSM10.jpg" style="max-width: 100%; height: auto;"> 
                     </div>
                   </div>
                 </div>
