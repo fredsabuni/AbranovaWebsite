@@ -37,11 +37,7 @@
     <title>Abranova Inc</title>
   </head>
   <body> 
-
-    <!-- MODALS
-    ================================================== -->
-     
-
+ 
     <!-- NAVBAR
     ================================================= -->
     <nav class="navbar navbar-expand-xl navbar-dark  navbar-togglable  fixed-top">
@@ -212,7 +208,7 @@
 
             <!-- Button -->
             <div class="mb-5 mb-md-0" data-toggle="animation" data-animation="fadeUp" data-animation-order="3" data-animation-trigger="load">
-              <a href="#" target="_blank" class="btn btn-outline-white text-white" style="margin-bottom: 16px;">
+              <a href="https://novartp.com/" target="_blank" class="btn btn-outline-white text-white" style="margin-bottom: 16px;">
                 Invest
               </a>
             </div> 
@@ -240,7 +236,7 @@
 
             <!-- Button -->
             <div class="mb-5 mb-md-0" data-toggle="animation" data-animation="fadeUp" data-animation-order="3" data-animation-trigger="load">
-              <a href="#" target="_blank" class="btn btn-outline-primary abranova-primary" style="margin-bottom: 16px;">
+              <a href="https://novartp.com/" target="_blank" class="btn btn-outline-primary abranova-primary" style="margin-bottom: 16px;">
                 Invest
               </a>
             </div> 
@@ -328,11 +324,31 @@
       </div> <!-- / .container -->
 
     </section>
-
-    <!-- FEATURES
-    ================================================== -->
-    <section class="section" style="padding-top: 0rem;">
-
+	  
+	<section class="section section-full"> 
+      <!-- Cover -->
+      <div class="bg-cover" style="background-image: url('<?php echo base_url();?>assets/new-assets/img/11.jpg');"></div>
+      
+      <!-- Content -->
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-md-10 col-lg-8"> 
+            <div class="bg-white text-center shadow py-5 px-4 p-md-6"> 
+              <div class="mb-4">
+                <img src="<?php echo base_url();?>assets/new-assets/ico/RTP-Logo-Red-02.png" 
+					 style="max-width: 150px; max-height: 100px;" class="icon icon-diamond icon-2x"></img>
+              </div>
+   
+              <a href="https://novartp.com/" class="btn btn-outline-primary" target="_blank">
+                Visit our Latest Project
+              </a> 
+            </div> 
+          </div>
+        </div> 
+        </div>  
+    </section> 
+	
+    <section class="section nova_projects"> 
       <!-- Content -->
       <div class="container">
 		<row class="row">
@@ -364,24 +380,23 @@
           
           </div> -->
         </div> <!-- / .row -->
-        <div class="row">
+        <div class="row"> 
 
           <!-- Listing Item -->
           <?php  
           foreach ($projects as $row) {  
             ?>
-           <div class="col-md-4">
-
+           <div class="col-md-4"> 
+			<a href="<?php echo base_url() .'invest/'.$row->project_id ; ?>" style="text-decoration: none;">
             <!-- Item -->
-            <div class="mb-5 mb-md-0">
-              
+            <div class="mb-5 mb-md-0"> 
               <!-- Image -->
               <?php $limit = 0;
 			          foreach ($images as $image) {
                 if($image->project_id == $row->project_id) {
                     $limit = $limit + 1;
                     if($limit == 1){
-                      echo '
+                      echo ' 
 					  <div class="ribbon mb-3" style="background: url('.base_url() . $image->image_path.'); background-size: cover;"> 
                     	<span class="ribbon4" style="font-family: OttomatBold;">Completed</span>
                 	  </div> ';   
@@ -414,34 +429,12 @@
               </div>-->
 
             </div>
-
+			 </a>
           </div>
            
           <?php } ?>
           </div>  
       </div>  
-    </section>
-	<section class="section section-full"> 
-      <!-- Cover -->
-      <div class="bg-cover" style="background-image: url('<?php echo base_url();?>assets/new-assets/img/11.jpg');"></div>
-      
-      <!-- Content -->
-      <div class="container">
-        <div class="row align-items-center justify-content-center">
-          <div class="col-md-10 col-lg-8"> 
-            <div class="bg-white text-center shadow py-5 px-4 p-md-6"> 
-              <div class="mb-4">
-                <img src="<?php echo base_url();?>assets/new-assets/ico/RTP-Logo-Red-02.png" 
-					 style="max-width: 150px; max-height: 100px;" class="icon icon-diamond icon-2x"></img>
-              </div>
-   
-              <a href="https://novartp.com/" class="btn btn-outline-primary" target="_blank">
-                Visit our Latest Project
-              </a> 
-            </div> 
-          </div>
-        </div> 
-        </div>  
     </section> 
   
 
