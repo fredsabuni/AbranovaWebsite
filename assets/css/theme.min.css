@@ -12874,10 +12874,16 @@ h1 {
 }
 
 .parallelogram {
-  width: inherit;
+  width: 450px;
   height: 70px;
   background: var(--primary);
 }
+
+.parallelogramMobile {
+    width: inherit;
+    height: 70px;
+    background: var(--primary);
+  }
 
 .circle {
   width: 100px;
