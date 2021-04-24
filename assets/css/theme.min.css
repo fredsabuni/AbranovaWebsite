@@ -12949,3 +12949,23 @@ h1 {
     padding: 0 !important;
     margin: 0 !important;
  }
+
+ .webEvent{
+  display: block; 
+}
+
+@media (max-width: 768px) {
+  .webEvent {
+    display: none; 
+  }
+}
+
+.mobileEvent{
+  display: none; 
+}
+
+@media (max-width: 768px) {
+  .mobileEvent {
+    display: block; 
+  }
+}
