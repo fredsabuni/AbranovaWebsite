@@ -1,0 +1,1369 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/ico/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/ico/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/ico/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/ico/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="assets/ico/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <link rel="shortcut icon" href="assets/ico/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="msapplication-config" content="assets/ico/browserconfig.xml" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="assets/libs/flickity/dist/flickity.min.css" />
+    <link rel="stylesheet" href="assets/libs/flickity-fade/flickity-fade.css" />
+    <link
+      rel="stylesheet"
+      href="assets/libs/fullpage.js/dist/fullpage.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/libs/highlightjs/styles/codepen-embed.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/libs/%40fortawesome/fontawesome-free/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/libs/incline-icons/style.min.css" />
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="assets/css/theme.min.css" />
+    <link rel="stylesheet" href="assets/css/extra.css" />
+    <link rel="stylesheet" href="assets/css/slider.css" />
+    <title>Abranova Inc</title>
+  </head>
+  <body>
+    <!-- NAVBAR
+    ================================================= -->
+    <nav class="navbar navbar-expand-xl navbar-dark navbar-togglable fixed-top">
+      <div class="container">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#">
+          <img
+            src="assets/ico/redLogo.png"
+            class="ab-logo"
+            style="max-width: 100px; max-width: 100px"
+          />
+        </a>
+
+        <!-- Toggler -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapse -->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <!-- Social -->
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="fab fa-linkedin"></i>
+                <span class="d-xl-none ml-2"> LinkedIn </span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="fab fa-facebook"></i>
+                <span class="d-xl-none ml-2"> Facebook </span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="fab fa-twitter"></i>
+                <span class="d-xl-none ml-2"> Twitter </span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="fab fa-instagram"></i>
+                <span class="d-xl-none ml-2"> Instagram </span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="fab fa-youtube"></i>
+                <span class="d-xl-none ml-2"> Youtube </span>
+              </a>
+            </li>
+          </ul>
+
+          <!-- Links -->
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarWelcome"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                About Us
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarLandings">
+                <a class="dropdown-item" href="#"> How it works </a>
+                <a class="dropdown-item" href="#"> our team </a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarLandings"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Resources
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarLandings">
+                <a class="dropdown-item" href="#"> Articles </a>
+                <a class="dropdown-item" href="#"> FAQs </a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link"> Career </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" target="_blank" class="nav-link"> Invest </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link"> Login </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" target="_blank" class="nav-link"> Register </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="section section-top section-full" id="webVersion">
+        <div class="container">
+          <div class="row"> 
+            <?php if($profile == 'abraham'){?> 
+            <div class="col-md-3" style="z-index: 2">
+              <img
+                src="<?php echo base_url()?>assets/images/team-01.jpg"
+                style="
+                  max-width: 350px;
+                  max-height: 900px;
+                  margin-top: 24px;
+                  margin-left: -24px;
+                "
+              />
+            </div>
+            <div
+              class="col-md-9"
+              style="background-color: #dadfe1; z-index: 1; height: inherit; padding-bottom: 16px;"
+            >
+              <div
+                class="parallelogram"
+                style="margin-top: 100px; text-align:justify;"
+              >
+                <h3
+                  style=" 
+                    font-family: Lato-BlackItalic; 
+                    color: #ffffff;
+                    padding-top: 4px;
+                    padding-left: 105px;
+                    margin-bottom: 0px;
+                  ">
+                  <?php echo $name ?> <br/>
+                  <h5
+                  style=" 
+                    font-family: Lato-Italic;
+                    color: #ffffff;
+                    padding-top: 0px;
+                    padding-left: 105px;
+                    margin-top: 0px;
+                  ">
+                  <?php echo $title?>
+                </h5> 
+                </h3> 
+              </div>
+              <div class="row">
+                <div class="col-md-3 d-flex justify-content-end" style="display: flex; justify-content: right;"> 
+                 <img src="<?php echo base_url()?>assets/new-assets/ico/duke-university-logo.png" style=" max-width: 70px; margin-top: 36px; max-height: 70px;"/>
+                </div>
+                <div class="col-md-9">
+                  <h4 style="margin-top: 34px; font-family: Lato-Regular;  font-weight: 1000; color: #ad1f24;">
+                    DUKE UNIVERSITY, Pratt School of Engineering
+                  </h4>
+                  <i><p style="font-family: Lato-Italic;">Bachelor of Science in Mechanical Engineering and Materials Science</p></i>
+                  <p style="font-family: Lato-Regular; line-height: 1.3;">
+                    Minor in Arabic; Chinese and French. Recipient of the Duke University merit-based Reginaldo Howard Memorial Scholarship.
+                  </p>
+                  <p style="font-family: Lato-Regular; line-height: 1.3; opacity: 0.7;">Durham, NC <br/> May, 2016</p> 
+    
+                  <hr style="border-top: 1px dashed #ad1f24" />
+                </div>
+              </div>
+    
+              <div class="row">
+                <div class="col-md-3 d-flex justify-content-end" style="display: flex; justify-content: right; ">
+                  <img src="<?php echo base_url()?>assets/new-assets/ico/redLogo.png" style=" max-width: 70px; margin-top: 36px; max-height: 70px;"/>
+                </div>
+                <div class="col-md-9">
+                  <h4 style="margin-top: 34px; font-family: Lato-Regular; font-weight: 1000; color: #ad1f24;">
+                    ABRANOVA REAL ESTATE, INC
+                  </h4> 
+                  <p style="font-family: Lato-Regular; line-height: 1.3;">
+                    Founded Abranova Real Estate and used data analytics and simulation technologies to acquire a
+                    strategic golf-course residential subdivision in Treyburn Country Club.<br/><br/>
+                    Created the company's in-house real estate investment platform and raised more than $1.04MM for
+                    the first phase of construction.<br/><br/>
+                    Currently operating the project at a 104% budget efficiency and on-track to deliver the projected 16%
+                    IRR for our investors. Sold 50% of inventory as pre-sales.<br/><br/>
+                    Raised $1MM in investments for the financing of the second phase of construction which is currently
+                    under construction. Sold 50% of inventory as pre-sales.<br/><br/>
+                    Projected to end the year with more than $2.5MM in revenues. Currently working on next acquisitions
+                    and development plans with a $4MM committed towards the next project.
+                  </p> 
+                <p style="font-family: Lato-Regular; line-height: 1.3; opacity: 0.7;">Durham, NC <br/> Jan, 2017 - Present</p> 
+                <hr style="border-top: 1px dashed #ad1f24" />
+                </div>
+              </div>
+    
+              <div
+              class="parallelogram"
+              style="margin-top: 100px; margin-left: -24px; align-items: center; max-height: 50px">
+              <h3
+                style=" 
+                  font-family: Lato-Regular;
+                  padding-top: 8px;
+                  color: #ffffff;
+                  margin-left: 72px;
+                  margin-bottom: 0px;
+                ">
+                EXPERIENCE
+              </h3>
+            </div>
+    
+            <div class="row">
+              <div class="col-md-3 d-flex justify-content-end" style="display: flex; justify-content: right; ">
+                <div class="circle" style="max-width: 40px; max-height: 40px; margin-top: 36px;"></div>
+              </div>
+              <div class="col-md-9">
+                <h4 style="margin-top: 34px; font-family: Lato-Italic; font-weight: 800;">
+                GILBANE BUILDING COMPANY
+                </h4>  
+                <p style="font-family: Lato-Regular; line-height: 1.3;">Gilbane is a leading Fortune 500 construction company with annual revenues of $4.5 Billion.</p>  
+              </div>
+            </div>  
+            <div class="row">
+              <div class="col-md-3 d-flex justify-content-end" style="display: flex; justify-content: right; ">
+                <div class="circle" style="max-width: 40px; max-height: 40px; margin-top: 36px;"></div>
+              </div>
+              <div class="col-md-9">
+                <h4 style="margin-top: 34px; font-family: Lato-Italic; font-weight: 800;">
+                    Project Engineer, Parkside Elementary School (Raleigh, NC)
+                </h4>
+                <p style="font-family: Lato-Regular; line-height: 1.3;">
+                    Took a $27MM project from scratch, worked with the client and architects to address all design and
+                    cost implication concerns.<br/><br/>
+                    Led three phases of preconstruction takeoffs and analysis to reconcile design changes to the overall
+                    project budget.<br/><br/>
+                    Collaborated with subcontractors, architects, and the client to minimize costs, negotiating contracts to
+                    work within the budget.
+                </p>  
+              </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 d-flex justify-content-end" style="display: flex; justify-content: right; ">
+                  <div class="circle" style="max-width: 40px; max-height: 40px; margin-top: 36px;"></div>
+                </div>
+                <div class="col-md-9">
+                  <h4 style="margin-top: 34px; font-family: Lato-Italic; font-weight: 800;">
+                    Preconstruction Engineer, Nutanix Chesterfield Renovation (Durham, NC)
+                  </h4>
+                  <p style="font-family: Lato-Regular; line-height: 1.3;">
+                    Prepared preconstruction estimates, takeoffs, bid tabs, and GMP documents for a $6MM office upfit
+                    job for Nutanix, Inc. technologies, located in Durham, NC.<br/><br/>
+                    Worked with the client, architect and subcontractors to consolidate the project budget from $8MM to
+                    $6MM.<br/><br/> 
+                  </p>  
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 d-flex justify-content-end" style="display: flex; justify-content: right; ">
+                  <div class="circle" style="max-width: 40px; max-height: 40px; margin-top: 36px;"></div>
+                </div>
+                <div class="col-md-9">
+                  <h4 style="margin-top: 34px; font-family: Lato-Italic; font-weight: 800;">
+                    Preconstruction Engineer, Project Riverboat (Charlotte, NC)
+                  </h4>
+                  <p style="font-family: Lato-Regular; line-height: 1.3;">
+                    Prepared preconstruction estimates, takeoffs, bid tabs, and GMP documents for a 33 stories, $179MM
+                    high-rise office building dubbed ‘Project Riverboat’ for the $24B development firm Lincoln Harris.<br/><br/>
+                    Worked with the client, architect and subcontractors to consolidate the construction budget.<br/><br/> 
+                    Prepared preconstruction estimates, takeoffs, bid tabs, and GMP documents for a 4 stories parking
+                    garage for the Project Riverboat high-rise.
+                  </p> 
+                  <p style="font-family: Lato-Regular; line-height: 1.3; opacity: 0.7;">Durham, NC <br/> May, 2016 - Sept, 2017</p> 
+                </div>
+            </div>
+            </div>
+    
+            <?php }elseif($profile == 'julia'){?>
+    
+                <div class="col-md-3" style="z-index: 2">
+                    <img
+                      src="<?php echo base_url()?>assets/images/team-02.jpg"
+                      style="
+                        max-width: 350px;
+                        max-height: 800px;
+                        margin-top: 24px;
+                        margin-left: -24px;
+                      "
+                    />
+                  </div>
+                  <div
+                    class="col-md-9"
+                    style="background-color: #dadfe1; z-index: 1; height: inherit; padding-bottom: 16px;"
+                  >
+                    <div
+                      class="parallelogram"
+                      style="margin-top: 100px; text-align:justify;"
+                    >
+                      <h3
+                        style=" 
+                          font-family: Lato-BlackItalic; 
+                          color: #ffffff;
+                          padding-top: 4px;
+                          padding-left: 105px;
+                          margin-bottom: 0px;
+                        ">
+                        <?php echo $name ?> <br/>
+                        <h5
+                        style=" 
+                          font-family: Lato-Italic;
+                          color: #ffffff;
+                          padding-top: 0px;
+                          padding-left: 105px;
+                          margin-top: 0px;
+                        ">
+                        <?php echo $title?>
+                      </h5> 
+                      </h3> 
+                    </div>
+                    <div class="row">
+                      <div class="col-md-3 d-flex justify-content-end" style="display: flex; justify-content: right;">
+                         <img src="<?php echo base_url()?>assets/new-assets/ico/duke-university-logo.png" style=" max-width: 70px; margin-top: 36px; max-height: 70px;"/>
+                      </div>
+                      <div class="col-md-9">
+                        <h4 style="margin-top: 34px; font-family: Lato-Regular;  font-weight: 1000; color: #ad1f24;">
+                          DUKE DUKE UNIVERSITY, The Fuqua School of Business
+                        </h4>
+                        <i><p style="font-family: Lato-Italic;">Master of Business Administration</p></i>
+                        <p style="font-family: Lato-Regular; line-height: 1.3;">
+                            Academic: 760 GMAT. Recipient of Merit-based scholarship. Certificate in Management Science and Technology
+                            Management and Finance concentration. Mentored study with investment firm.
+                        </p>
+                        <p style="font-family: Lato-Regular; line-height: 1.3; opacity: 0.7;">Durham, NC <br/> May, 2020</p> 
+          
+                        <hr style="border-top: 1px dashed #ad1f24" />
+                      </div>
+                    </div>
+          
+                    <div class="row">
+                      <div class="col-md-3 d-flex justify-content-end" style="display: flex; justify-content: right; ">
+                         <img src="<?php echo base_url()?>assets/new-assets/ico/tokyo-uni-logo.png" style=" max-width: 70px; max-height: 70px;"/>
+                      </div>
+                      <div class="col-md-9">
+                        <h4 style="margin-top: 34px; font-family: Lato-Regular; font-weight: 1000; color: #ad1f24;">
+                            UNIVERSITY OF TOKYO
+                        </h4> 
+                        <i><p style="font-family: Lato-Italic;">Master of Engineering, Sub-major in Technology Management for Innovation, GPA 3.9 of 4.0</p></i>
+                        <p style="font-family: Lato-Italic;">Bachelor of Engineering, Architecture, GPA 3.8 of 4.0</p>
+                        <p style="font-family: Lato-Regular; line-height: 1.3;">
+                          Co-designed projects under Professor KENGO KUMA (architect of 2020 Tokyo Olympic Games stadium).<br/><br/>
+                          Event organizer in Greater China Club and event planner in Business Competition club.<br/><br/>
+                          Awarded merit-based full scholarship for four years.<br/><br/> 
+                        </p> 
+                      <p style="font-family: Lato-Regular; line-height: 1.3; opacity: 0.7;">Tokyo, Japan <br/> March, 2012 & March, 2010</p> 
+                      <hr style="border-top: 1px dashed #ad1f24" />
+                      </div>
+                    </div>
+          
+                    <div
+                    class="parallelogram"
+                    style="margin-top: 100px; margin-left: -24px; align-items: center; max-height: 50px">
+                    <h3
+                      style=" 
+                        font-family: Lato-Regular;
+                        padding-top: 8px;
+                        color: #ffffff;
+                        margin-left: 72px;
+                        margin-bottom: 0px;
+                      ">
+                      EXPERIENCE
+                    </h3>
+                  </div>
+          
+                  <div class="row">
+                    <div class="col-md-3 d-flex justify-content-end" style="display: flex; justify-content: right; ">
+                      <div class="circle" style="max-width: 40px; max-height: 40px; margin-top: 36px;"></div>
+                    </div>
+                    <div class="col-md-9">
+                      <h4 style="margin-top: 34px; font-family: Lato-Italic; font-weight: 800;">
+                        KAJIMA CORPORATION
+                      </h4>  
+                      <p style="font-family: Lato-Regular; line-height: 1.3;">Leading Fortune 500 construction company with annual revenues of $17.5 Billion.</p>   
+                    </div>
+                  </div> 
+          
+                  <div class="row">
+                    <div class="col-md-3 d-flex justify-content-end" style="display: flex; justify-content: right; ">
+                      <div class="circle" style="max-width: 40px; max-height: 40px; margin-top: 36px;"></div>
+                    </div>
+                    <div class="col-md-9">
+                      <h4 style="margin-top: 34px; font-family: Lato-Italic; font-weight: 800;">
+                        Project Coordinator (Representative at China investment team), Real Estate Development Division
+                      </h4>
+                      <p style="font-family: Lato-Regular; line-height: 1.3;">
+                        First international employee to be hired by Kajima Corporation.<br/><br/>
+                        Searched and analyzed 11 potential real estate investment projects from return and risk perspective and made
+                        recommendations to division head, resulting in $30 Million investment.<br/><br/>
+                        Advised prefab factories (supplier) to share revenue with developers and increased supply chain profit by 5%.<br/><br/>
+                        Conducted research and co-designed master plan in Special Economic Zone near Shenyang airport which
+                        attracted over 50 companies to build new branches<br/><br/>
+                        Launched two construction products in broader China market and reduced air pollution.
+                      </p>  
+                      <p style="font-family: Lato-Regular; line-height: 1.3; opacity: 0.7;">Tokyo, Japan <br/>Shanghai, China <br/>2015 - 2017</p> 
+                    </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-3 d-flex justify-content-end" style="display: flex; justify-content: right; ">
+                        <div class="circle" style="max-width: 40px; max-height: 40px; margin-top: 36px;"></div>
+                      </div>
+                      <div class="col-md-9">
+                        <h4 style="margin-top: 34px; font-family: Lato-Italic; font-weight: 800;">
+                            Investment Analyst, Real Estate Development Division
+                        </h4>
+                        <p style="font-family: Lato-Regular; line-height: 1.3;">
+                          Improved construction quality by introducing new products and technologies to China developers (such as
+                          VANKE, largest developer in China/Fortune 500), reducing construction errors by 10x<br/><br/>
+                          Managed 530,000 square meters investments and achieved 25% net profits and reduced profit repatriation
+                          period from 12 months to 8 months through cross-function collaboration.<br/><br/> 
+                          Strengthened the relationship by advising partner company to introduce interior decoration options in China
+                          market and enhanced its performance by offering more options to customers.
+                        </p>   
+                        <p style="font-family: Lato-Regular; line-height: 1.3; opacity: 0.7;">Shanghai, China <br/> 2013 - 2015</p> 
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-3 d-flex justify-content-end" style="display: flex; justify-content: right; ">
+                        <div class="circle" style="max-width: 40px; max-height: 40px; margin-top: 36px;"></div>
+                      </div>
+                      <div class="col-md-9">
+                        <h4 style="margin-top: 34px; font-family: Lato-Italic; font-weight: 800;">
+                            Construction engineer, Tokyo Construction Division
+                        </h4>
+                        <p style="font-family: Lato-Regular; line-height: 1.3;">
+                          Reduced daily working hours from 12 to 10 hours per day boosting efficiency by 20%, saving 2% on concrete costs
+                          through cooperating with construction workers and streamlining concrete logistic.<br/><br/>
+                          Managed purchase of skyscraper building’s curtain wall from a Chinese factory and saved 3% cost.<br/><br/> 
+                          Assisted VANKE general manager training program as engineer and translator and developed groundwork for future
+                          collaboration between two companies.<br/><br/> 
+                          Pioneered international student recruitment for career-track positions, resulting in continuous international student
+                          recruitment.
+                        </p> 
+                        <p style="font-family: Lato-Regular; line-height: 1.3; opacity: 0.7;">Tokyo, Japan <br/> 2009 - 2012 </p> 
+                      </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-3 d-flex justify-content-end" style="display: flex; justify-content: right; ">
+                      <div class="circle" style="max-width: 40px; max-height: 40px; margin-top: 36px;"></div>
+                    </div>
+                    <div class="col-md-9">
+                      <h4 style="margin-top: 34px; font-family: Lato-Italic; font-weight: 800;">
+                        BAIN AND COMPANY
+                      </h4>
+                      <p style="font-family: Lato-Regular; line-height: 1.3;">
+                        Analyzed Japan cosmetic market and gave client (a cosmetic company) advice to double revenue. 
+                      </p> 
+                      <p style="font-family: Lato-Regular; line-height: 1.3; opacity: 0.7;">Tokyo, Japan <br/> 2011</p> 
+                    </div>
+                </div>
+                  </div>
+             
+    
+            <?php }elseif($profile == 'jordan'){?> 
+    
+                <div class="col-md-3" style="z-index: 2">
+                    <img
+                      src="<?php echo base_url()?>assets/images/team-05.jpg"
+                      style="
+                        max-width: 350px;
+                        max-height: 800px;
+                        margin-top: 24px;
+                        margin-left: -24px;
+                      "
+                    />
+                  </div>
+                  <div
+                    class="col-md-9"
+                    style="background-color: #dadfe1; z-index: 1; height: inherit; padding-bottom: 16px;"
+                  >
+                    <div
+                      class="parallelogram"
+                      style="margin-top: 100px; text-align:justify;"
+                    >
+                      <h3
+                        style=" 
+                          font-family: Lato-BlackItalic; 
+                          color: #ffffff;
+                          padding-top: 4px;
+                          padding-left: 105px;
+                          margin-bottom: 0px;
+                        ">
+                        <?php echo $name ?> <br/>
+                        <h5
+                        style=" 
+                          font-family: Lato-Italic;
+                          color: #ffffff;
+                          padding-top: 0px;
+                          padding-left: 105px;
+                          margin-top: 0px;
+                        ">
+                        <?php echo $title?>
+                      </h5> 
+                      </h3> 
+                    </div>
+                    <div class="row">
+                      <div class="col-md-3 d-flex justify-content-end" style="display: flex; justify-content: right;">
+                        <img src="<?php echo base_url()?>assets/new-assets/ico/duke-university-logo.png" style=" max-width: 70px; margin-top: 36px; max-height: 70px;"/>
+                      </div>
+                      <div class="col-md-9">
+                        <h4 style="margin-top: 34px; font-family: Lato-Regular;  font-weight: 1000; color: #ad1f24;">
+                            DUKE UNIVERSITY, The Fuqua School of Business
+                        </h4>
+                        <i><p style="font-family: Lato-Italic;">Master of Business Administration</p></i>
+                        <p style="font-family: Lato-Regular; line-height: 1.3;">
+                            Academic: 730 GMAT, Concentrations in Strategy and Marketing
+                            Program for Entrepreneurs(P4E): Building Internet of Things (IoT) gym solution product
+                            Mentored Study Program (MSP): Marketing Plan for Free-Space Optical Broadband product
+                            President of the Culinary Club and Ski and Snowboard Club; MBA Cabinet Social Chai.
+                        </p>
+                        <p style="font-family: Lato-Regular; line-height: 1.3; opacity: 0.7;">Durham, NC <br/> May, 2019</p> 
+          
+                        <hr style="border-top: 1px dashed #ad1f24" />
+                      </div>
+                    </div>
+          
+                    <div class="row">
+                      <div class="col-md-3 d-flex justify-content-end" style="display: flex; justify-content: right; ">
+                        <img src="<?php echo base_url()?>assets/new-assets/ico/duke-university-logo.png" style=" max-width: 70px; max-height: 70px;"/>
+                      </div>
+                      <div class="col-md-9">
+                        <h4 style="margin-top: 34px; font-family: Lato-Regular; font-weight: 1000; color: #ad1f24;">
+                         DUKE UNIVERSITY, Pratt School of Engineering
+                        </h4> 
+                        <i><p style="font-family: Lato-Italic;">Bachelor of Science in Civil Engineering</p></i>
+                        <p style="font-family: Lato-Regular; line-height: 1.3;">
+                          Minor in Economics, Certificate in Energy and the Environment.
+                        </p> 
+                      <p style="font-family: Lato-Regular; line-height: 1.3; opacity: 0.7;">Durham, NC <br/>May, 2012</p> 
+                      <hr style="border-top: 1px dashed #ad1f24" />
+                      </div>
+                    </div>
+          
+                    <div
+                    class="parallelogram"
+                    style="margin-top: 100px; margin-left: -24px; align-items: center; max-height: 50px">
+                    <h3
+                      style=" 
+                        font-family: Lato-Regular;
+                        padding-top: 8px;
+                        color: #ffffff;
+                        margin-left: 72px;
+                        margin-bottom: 0px;
+                      ">
+                      EXPERIENCE
+                    </h3>
+                  </div>
+          
+                  <div class="row">
+                    <div class="col-md-3 d-flex justify-content-end" style="display: flex; justify-content: right; ">
+                      <div class="circle" style="max-width: 40px; max-height: 40px; margin-top: 36px;"></div>
+                    </div>
+                    <div class="col-md-9">
+                      <h4 style="margin-top: 34px; font-family: Lato-Italic; font-weight: 800;">
+                      GILBANE BUILDING COMPANY
+                      </h4>  
+                      <p style="font-family: Lato-Regular; line-height: 1.3;">Gilbane is one of the largest privately-held and family-owned construction companies in the industry.</p>  
+                    </div>
+                  </div> 
+          
+                  <div class="row">
+                    <div class="col-md-3 d-flex justify-content-end" style="display: flex; justify-content: right; ">
+                      <div class="circle" style="max-width: 40px; max-height: 40px; margin-top: 36px;"></div>
+                    </div>
+                    <div class="col-md-9">
+                      <h4 style="margin-top: 34px; font-family: Lato-Italic; font-weight: 800;">
+                        Senior Project Engineer, Nutanix Chesterfield Renovation (Durham, NC)
+                      </h4>
+                      <p style="font-family: Lato-Regular; line-height: 1.3;">
+                        Supervised over 60 field personnel, wrote contracts and enforced contractual obligations on a $6MM
+                        Interior Renovation of 160,000 SF at a former Durham Tobacco Factory.<br/><br/>
+                        Developed strategic plan of designs and materials to save over $2MM on what was initially an $8MM
+                        project to meet the client’s budget.<br/><br/>
+                        Collaborated with subcontractors, architects, and the client to minimize costs, negotiating contracts to
+                        work within the budget.<br/><br/>
+                        Completed the project on time and under budget, which facilitated a strong relationship leading to
+                        future work with this client.
+                      </p>  
+                      <p style="font-family: Lato-Regular; line-height: 1.3; opacity: 0.7;">Durham, NC <br/> 2012 - 2017</p> 
+                    </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-3 d-flex justify-content-end" style="display: flex; justify-content: right; ">
+                        <div class="circle" style="max-width: 40px; max-height: 40px; margin-top: 36px;"></div>
+                      </div>
+                      <div class="col-md-9">
+                        <h4 style="margin-top: 34px; font-family: Lato-Italic; font-weight: 800;">
+                            Senior Project Engineer, Google Fiber Storefront Renovations (Atlanta Metro Area, Raleigh-Durham)
+                        </h4>
+                        <p style="font-family: Lato-Regular; line-height: 1.3;">
+                          Managed budgets and schedules, and supervised teams of 30+ field personnel per job for four projects,
+                          each around $2M and 10,000 SF in Georgia and North Carolina.<br/><br/>
+                          Strategically reorganized project responsibilities and collaborated with team to improve dynamic on
+                          initial project, ultimately completing the project with savings, and on schedule.<br/><br/>
+                          Built strong relationship and was awarded three additional projects, securing future work and ensuring
+                          status as a preferred contractor for the Google Real Estate department. 
+                        </p>  
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-3 d-flex justify-content-end" style="display: flex; justify-content: right; ">
+                        <div class="circle" style="max-width: 40px; max-height: 40px; margin-top: 36px;"></div>
+                      </div>
+                      <div class="col-md-9">
+                        <h4 style="margin-top: 34px; font-family: Lato-Italic; font-weight: 800;">
+                            Project Engineer, Duke Powerhouse Renovation (Durham, NC)
+                        </h4>
+                        <p style="font-family: Lato-Regular; line-height: 1.3;">
+                         Supervised 100+ field personnel daily and maintained project financials including monthly cost reporting
+                         and pay applications on a $10MM renovation of a 100-year-old Tobacco Powerhouse in downtown
+                         Durham.<br/><br/>
+                         Minimized cost for a key relationship, and completed project on time and under budget, which led to
+                         the award of three subsequent projects worth ~$65MM
+                        </p> 
+                      </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-3 d-flex justify-content-end" style="display: flex; justify-content: right; ">
+                      <div class="circle" style="max-width: 40px; max-height: 40px; margin-top: 36px;"></div>
+                    </div>
+                    <div class="col-md-9">
+                      <h4 style="margin-top: 34px; font-family: Lato-Italic; font-weight: 800;">
+                        Assistant Superintendent, Scotts Ridge Elementary School (Apex, NC)
+                      </h4>
+                      <p style="font-family: Lato-Regular; line-height: 1.3;">
+                       Managed 100+ field personnel daily to drive performance and schedule, and ensure quality work on
+                       $35MM New Elementary School for Wake County Public Schools.<br/><br/>
+                       Assisted Senior Project Engineer with financial responsibilities and writing contracts.<br/><br/>
+                       Led team to on-time and below-budget completion, winning five additional Wake County Public School
+                       System projects.
+                      </p> 
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 d-flex justify-content-end" style="display: flex; justify-content: right; ">
+                      <div class="circle" style="max-width: 40px; max-height: 40px; margin-top: 36px;"></div>
+                    </div>
+                    <div class="col-md-9">
+                      <h4 style="margin-top: 34px; font-family: Lato-Italic; font-weight: 800;">
+                        Office Engineer, Veteran’s Affairs Hospital (Greenville, NC)
+                      </h4>
+                      <p style="font-family: Lato-Regular; line-height: 1.3;">
+                       Negotiated bids and wrote contracts for new subcontractors, building models to evaluate bids and
+                       provided estimating backup to support or reject bids on $40MM New Veteran’s Affairs Hospital for a
+                       private developer to be leased by the VA.<br/><br/>
+                       Minimized contractual construction costs and saved around $5MM of the final project costs, which led
+                       to an earned a profit of $1MM on the project.
+                      </p> 
+                    </div>
+                </div>
+              </div> 
+            <?php } ?>
+          </div>
+        </div>
+    </section>
+    
+    <section class="section section-top section-full" id="mobileVersion">
+        <div class="container">
+          <div class="row">
+            <?php if($profile == 'abraham'){?>
+            <div class="col-12 nopadding" >
+              <img
+                src="<?php echo base_url()?>assets/images/team-01.jpg"
+                style="
+                  max-width: 100%;
+                  max-height: 800px;   
+                  margin-top: 0px;
+                "/>
+              <div class="col-sm-12"
+              style="background-color: #dadfe1; z-index: 1; height: inherit; padding-bottom: 16px;">
+              <div
+                class="parallelogramMobile"
+                style="margin-top: 0px; padding-top: 0px; margin-right: 16px; align-items: center">
+                <h3
+                  style=" 
+                    font-family: Lato-BlackItalic;
+                    padding-top: 8px;
+                    color: #ffffff;
+                    margin-left: 48px;
+                    margin-bottom: 0px;
+                  "
+                >
+                <?php echo $name ?>
+                </h3>
+                <h5
+                  style=" 
+                    font-family: Lato-Italic;
+                    color: #ffffff;
+                    margin-left: 48px;
+                    margin-top: 0px;
+                  "
+                >
+                <?php echo $title?>
+                </h5>
+              </div>
+              <div class="row">
+                <div class="col-sm-3">
+                  <img src="<?php echo base_url()?>assets/new-assets/ico/duke-university-logo.png" style=" max-width: 70px;  margin-top: 36px; max-height: 70px;"/>
+                </div>
+                <div class="col-sm-9">
+                    <h4 style="margin-top: 34px; font-family: Lato-Regular;  font-weight: 1000; color: #ad1f24;">
+                        DUKE UNIVERSITY, Pratt School of Engineering
+                      </h4>
+                      <i><p style="font-family: Lato-Italic;">Bachelor of Science in Mechanical Engineering and Materials Science</p></i>
+                      <p style="font-family: Lato-Regular; line-height: 1.3;">
+                        Minor in Arabic; Chinese and French. Recipient of the Duke University merit-based Reginaldo Howard Memorial Scholarship.
+                      </p>
+                      <p style="font-family: Lato-Regular; line-height: 1.3; opacity: 0.7;">Durham, NC</p>
+                      <p style="font-family: Lato-Regular; line-height: 1.3; padding-top: 0px; opacity: 0.7;">May, 2016</p>
+    
+                  <hr style="border-top: 1px dashed #ad1f24" />
+                </div>
+              </div>
+    
+              <div class="row">
+                <div class="col-sm-3">
+                  <img src="<?php echo base_url()?>assets/new-assets/ico/redLogo.png" style=" max-width: 70px; max-height: 70px;"/>
+                </div>
+                <div class="col-sm-9">
+                    <h4 style="margin-top: 34px; font-family: Lato-Regular; font-weight: 1000; color: #ad1f24;">
+                      ABRANOVA REAL ESTATE, INC
+                    </h4> 
+                    <p style="font-family: Lato-Regular; line-height: 1.3;">
+                        Founded Abranova Real Estate and used data analytics and simulation technologies to acquire a
+                        strategic golf-course residential subdivision in Treyburn Country Club.<br/><br/>
+                        Created the company's in-house real estate investment platform and raised more than $1.04MM for
+                        the first phase of construction.<br/><br/>
+                        Currently operating the project at a 104% budget efficiency and on-track to deliver the projected 16%
+                        IRR for our investors. Sold 50% of inventory as pre-sales.<br/><br/>
+                        Raised $1MM in investments for the financing of the second phase of construction which is currently
+                        under construction. Sold 50% of inventory as pre-sales.<br/><br/>
+                        Projected to end the year with more than $2.5MM in revenues. Currently working on next acquisitions
+                        and development plans with a $4MM committed towards the next project.
+                    </p> 
+                    <p style="font-family: Lato-Regular; line-height: 1.3; opacity: 0.7;">Durham, NC</p>
+                    <p style="font-family: Lato-Regular; line-height: 1.3; opacity: 0.7;">Jan, 2017 - Present</p>
+    
+                  <hr style="border-top: 1px dashed #ad1f24" />
+                </div>
+              </div>
+    
+              <div
+              class="parallelogramMobile"
+              style="margin-top: 30px; align-items: center; max-height: 50px">
+              <h3
+                style=" 
+                  font-family: Lato-Regular;
+                  padding-top: 8px;
+                  color: #ffffff;
+                  margin-left: 48px;
+                  margin-bottom: 0px;
+                ">
+                EXPERIENCE
+              </h3>
+            </div>
+    
+            <div class="row"> 
+              <div class="col-sm-12" style="margin-top: 20px;"> 
+                <h4 style="margin-top: 34px; font-family: Lato-Italic; font-weight: 800;">
+                    <i class="circle" style="max-width: 40px; max-height: 40px;"></i>  GILBANE BUILDING COMPANY
+                    </h4>  
+                    <p style="font-family: Lato-Regular; line-height: 1.3;">Gilbane is a leading Fortune 500 construction company with annual revenues of $4.5 Billion.</p> 
+              </div>
+            </div> 
+    
+            <div class="row"> 
+                <div class="col-sm-12" style="margin-top: 20px;"> 
+                    <h4 style="margin-top: 34px; font-family: Lato-Italic; font-weight: 800;">
+                        <i class="circle" style="max-width: 40px; max-height: 40px;"></i>  Project Engineer, Parkside Elementary School (Raleigh, NC)
+                    </h4>
+                    <p style="font-family: Lato-Regular; line-height: 1.3;">
+                        Took a $27MM project from scratch, worked with the client and architects to address all design and
+                        cost implication concerns.<br/><br/>
+                        Led three phases of preconstruction takeoffs and analysis to reconcile design changes to the overall
+                        project budget.<br/><br/>
+                        Collaborated with subcontractors, architects, and the client to minimize costs, negotiating contracts to
+                        work within the budget.
+                    </p>   
+                </div>
+            </div> 
+            <div class="row"> 
+                <div class="col-sm-12" style="margin-top: 20px;"> 
+                    <h4 style="margin-top: 34px; font-family: Lato-Italic; font-weight: 800;">
+                        <i class="circle" style="max-width: 40px; max-height: 40px;"></i>  Preconstruction Engineer, Nutanix Chesterfield Renovation (Durham, NC)
+                      </h4>
+                      <p style="font-family: Lato-Regular; line-height: 1.3;">
+                        Prepared preconstruction estimates, takeoffs, bid tabs, and GMP documents for a $6MM office upfit
+                        job for Nutanix, Inc. technologies, located in Durham, NC.<br/><br/>
+                        Worked with the client, architect and subcontractors to consolidate the project budget from $8MM to
+                        $6MM.<br/><br/> 
+                      </p>   
+                </div>
+            </div> 
+            <div class="row"> 
+                <div class="col-sm-12" style="margin-top: 20px;"> 
+                    <h4 style="margin-top: 34px; font-family: Lato-Italic; font-weight: 800;">
+                        <i class="circle" style="max-width: 40px; max-height: 40px;"></i>  Preconstruction Engineer, Project Riverboat (Charlotte, NC)
+                      </h4>
+                      <p style="font-family: Lato-Regular; line-height: 1.3;">
+                        Prepared preconstruction estimates, takeoffs, bid tabs, and GMP documents for a 33 stories, $179MM
+                        high-rise office building dubbed ‘Project Riverboat’ for the $24B development firm Lincoln Harris.<br/><br/>
+                        Worked with the client, architect and subcontractors to consolidate the construction budget.<br/><br/> 
+                        Prepared preconstruction estimates, takeoffs, bid tabs, and GMP documents for a 4 stories parking
+                        garage for the Project Riverboat high-rise.
+                      </p> 
+                      <p style="font-family: Lato-Regular; line-height: 1.3; opacity: 0.7;">Durham, NC</p>
+                      <p style="font-family: Lato-Regular; line-height: 1.3; opacity: 0.7;">May, 2016 - Sept, 2017</p>  
+                </div>
+            </div> 
+            </div> 
+            </div>
+             
+            <?php }elseif($profile == 'julia'){?>
+                <div class="col-sm-12">
+                    <img
+                      src="<?php echo base_url()?>assets/images/team-02.jpg"
+                      style="
+                        max-width: 100%;
+                        max-height: 800px;  
+                        margin-bottom: 0px;
+                      "
+                    />
+                  </div>
+                  <div
+                    class="col-sm-12"
+                    style="background-color: #dadfe1; z-index: 1; height: inherit; padding-bottom: 16px;"
+                  >
+                    <div
+                      class="parallelogramMobile"
+                      style="margin-top: 0px; margin-right: 16px; align-items: center"
+                    >
+                      <h3
+                        style=" 
+                          font-family: Lato-BlackItalic;
+                          padding-top: 8px;
+                          color: #ffffff;
+                          margin-left: 48px;
+                          margin-bottom: 0px;
+                        "
+                      >
+                      <?php echo $name ?>
+                      </h3>
+                      <h5
+                        style=" 
+                          font-family: Lato-Italic;
+                          color: #ffffff;
+                          margin-left: 48px;
+                          margin-top: 0px;
+                        "
+                      >
+                      <?php echo $title?>
+                      </h5>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-3">
+                        <img src="<?php echo base_url()?>assets/new-assets/ico/duke-university-logo.png" style=" max-width: 70px; margin-top: 36px; max-height: 70px;"/>
+                      </div>
+                      <div class="col-sm-9">
+                        <h4 style="margin-top: 34px; font-family: Lato-Regular;  font-weight: 1000; color: #ad1f24;">
+                            DUKE DUKE UNIVERSITY, The Fuqua School of Business
+                          </h4>
+                          <i><p style="font-family: Lato-Italic;">Master of Business Administration</p></i>
+                          <p style="font-family: Lato-Regular; line-height: 1.3;">
+                              Academic: 760 GMAT. Recipient of Merit-based scholarship. Certificate in Management Science and Technology
+                              Management and Finance concentration. Mentored study with investment firm.
+                          </p>
+                          <p style="font-family: Lato-Regular; line-height: 1.3; opacity: 0.7;">Durham, NC</p>
+                          <p style="font-family: Lato-Regular; line-height: 1.3; padding-top: 0px; opacity: 0.7;">May, 2020</p>
+          
+                        <hr style="border-top: 1px dashed #ad1f24" />
+                      </div>
+                    </div>
+          
+                    <div class="row">
+                      <div class="col-sm-3">
+                        <img src="<?php echo base_url()?>assets/new-assets/ico/tokyo-uni-logo.png" style=" max-width: 70px; max-height: 70px;"/>
+                      </div>
+                      <div class="col-sm-9">
+                        <h4 style="margin-top: 34px; font-family: Lato-Regular; font-weight: 1000; color: #ad1f24;">
+                            UNIVERSITY OF TOKYO
+                        </h4> 
+                        <i><p style="font-family: Lato-Italic;">Master of Engineering, Sub-major in Technology Management for Innovation, GPA 3.9 of 4.0</p></i>
+                        <i><p style="font-family: Lato-Italic;">Bachelor of Engineering, Architecture, GPA 3.8 of 4.0</p></i>
+                        <p style="font-family: Lato-Regular; line-height: 1.3;">
+                          Co-designed projects under Professor KENGO KUMA (architect of 2020 Tokyo Olympic Games stadium).<br/><br/>
+                          Event organizer in Greater China Club and event planner in Business Competition club.<br/><br/>
+                          Awarded merit-based full scholarship for four years.<br/><br/> 
+                        </p> 
+                      <p style="font-family: Lato-Regular; line-height: 1.3; opacity: 0.7;">Tokyo, Japan</p>
+                      <p style="font-family: Lato-Regular; line-height: 1.3; opacity: 0.7;">March, 2012 & March, 2010</p> 
+          
+                        <hr style="border-top: 1px dashed #ad1f24" />
+                      </div>
+                    </div> 
+                    <div
+                    class="parallelogramMobile"
+                    style="margin-top: 30px; align-items: center; max-height: 50px">
+                    <h3
+                      style=" 
+                        font-family: Lato-Regular;
+                        padding-top: 8px;
+                        color: #ffffff;
+                        margin-left: 48px;
+                        margin-bottom: 0px;
+                      ">
+                      EXPERIENCE
+                    </h3>
+                  </div>
+          
+                  <div class="row"> 
+                    <div class="col-sm-12" style="margin-top: 20px;"> 
+                        <h4 style="margin-top: 34px; font-family: Lato-Italic; font-weight: 800;">
+                            <i class="circle" style="max-width: 40px; max-height: 40px;"></i>  KAJIMA CORPORATION
+                          </h4>  
+                          <p style="font-family: Lato-Regular; line-height: 1.3;">Leading Fortune 500 construction company with annual revenues of $17.5 Billion.</p> 
+                    </div>
+                  </div> 
+          
+                  <div class="row"> 
+                      <div class="col-sm-12" style="margin-top: 20px;"> 
+                        <h4 style="margin-top: 34px; font-family: Lato-Italic; font-weight: 800;">
+                            <i class="circle" style="max-width: 40px; max-height: 40px;"></i>   Project Coordinator (Representative at China investment team), Real Estate Development Division
+                          </h4>
+                          <p style="font-family: Lato-Regular; line-height: 1.3;">
+                            First international employee to be hired by Kajima Corporation.<br/><br/>
+                            Searched and analyzed 11 potential real estate investment projects from return and risk perspective and made
+                            recommendations to division head, resulting in $30 Million investment.<br/><br/>
+                            Advised prefab factories (supplier) to share revenue with developers and increased supply chain profit by 5%.<br/><br/>
+                            Conducted research and co-designed master plan in Special Economic Zone near Shenyang airport which
+                            attracted over 50 companies to build new branches<br/><br/>
+                            Launched two construction products in broader China market and reduced air pollution.
+                          </p>  
+                          <p style="font-family: Lato-Regular; line-height: 1.3; opacity: 0.7;">Tokyo, Japan</p>
+                          <p style="font-family: Lato-Regular; line-height: 1.3; opacity: 0.7;">Shanghai, China</p>
+                          <p style="font-family: Lato-Regular; line-height: 1.3; opacity: 0.7;">2015 - 2017</p>
+                      </div>
+                  </div> 
+                  <div class="row"> 
+                      <div class="col-sm-12" style="margin-top: 20px;"> 
+                        <h4 style="margin-top: 34px; font-family: Lato-Italic; font-weight: 800;">
+                            <i class="circle" style="max-width: 40px; max-height: 40px;"></i>   Investment Analyst, Real Estate Development Division
+                        </h4>
+                        <p style="font-family: Lato-Regular; line-height: 1.3;">
+                          Improved construction quality by introducing new products and technologies to China developers (such as
+                          VANKE, largest developer in China/Fortune 500), reducing construction errors by 10x<br/><br/>
+                          Managed 530,000 square meters investments and achieved 25% net profits and reduced profit repatriation
+                          period from 12 months to 8 months through cross-function collaboration.<br/><br/> 
+                          Strengthened the relationship by advising partner company to introduce interior decoration options in China
+                          market and enhanced its performance by offering more options to customers.
+                        </p>   
+                        <p style="font-family: Lato-Regular; line-height: 1.3; opacity: 0.7;">Shanghai, China</p>
+                        <p style="font-family: Lato-Regular; line-height: 1.3; opacity: 0.7;">2013 - 2015</p>  
+                      </div>
+                  </div> 
+                  <div class="row"> 
+                      <div class="col-sm-12" style="margin-top: 20px;"> 
+                        <h4 style="margin-top: 34px; font-family: Lato-Italic; font-weight: 800;">
+                            <i class="circle" style="max-width: 40px; max-height: 40px;"></i>   Construction engineer, Tokyo Construction Division
+                        </h4>
+                        <p style="font-family: Lato-Regular; line-height: 1.3;">
+                          Reduced daily working hours from 12 to 10 hours per day boosting efficiency by 20%, saving 2% on concrete costs
+                          through cooperating with construction workers and streamlining concrete logistic.<br/><br/>
+                          Managed purchase of skyscraper building’s curtain wall from a Chinese factory and saved 3% cost.<br/><br/> 
+                          Assisted VANKE general manager training program as engineer and translator and developed groundwork for future
+                          collaboration between two companies.<br/><br/> 
+                          Pioneered international student recruitment for career-track positions, resulting in continuous international student
+                          recruitment.
+                        </p> 
+                        <p style="font-family: Lato-Regular; line-height: 1.3; opacity: 0.7;">Tokyo, Japan</p>
+                        <p style="font-family: Lato-Regular; line-height: 1.3; opacity: 0.7;">2009 - 2012</p>  
+                      </div>
+                  </div>
+                  <div class="row"> 
+                    <div class="col-sm-12" style="margin-top: 20px;"> 
+                        <h4 style="margin-top: 34px; font-family: Lato-Italic; font-weight: 800;">
+                            <i class="circle" style="max-width: 40px; max-height: 40px;"></i>   BAIN AND COMPANY
+                          </h4>
+                          <p style="font-family: Lato-Regular; line-height: 1.3;">
+                            Analyzed Japan cosmetic market and gave client (a cosmetic company) advice to double revenue.<br/><br/> 
+                          </p> 
+                          <p style="font-family: Lato-Regular; line-height: 1.3; opacity: 0.7;">Tokyo, Japan</p>
+                          <p style="font-family: Lato-Regular; line-height: 1.3; opacity: 0.7;">2011</p>  
+                    </div>
+                </div>  
+                </div>
+            
+            <?php }elseif($profile == 'jordan'){?>
+                <div class="col-sm-12">
+                    <img
+                      src="<?php echo base_url()?>assets/images/team-05.jpg"
+                      style="
+                        max-width: 100%;
+                        max-height: 800px;  
+                        margin-bottom: 0px;
+                      "
+                    />
+                  </div>
+                  <div
+                    class="col-sm-12"
+                    style="background-color: #dadfe1; z-index: 1; height: inherit; padding-bottom: 16px;"
+                  >
+                    <div
+                      class="parallelogramMobile"
+                      style="margin-top: 0px; margin-right: 16px; align-items: center"
+                    >
+                      <h3
+                        style=" 
+                          font-family: Lato-BlackItalic;
+                          padding-top: 8px;
+                          color: #ffffff;
+                          margin-left: 48px;
+                          margin-bottom: 0px;
+                        "
+                      >
+                      <?php echo $name ?>
+                      </h3>
+                      <h5
+                        style=" 
+                          font-family: Lato-Italic;
+                          color: #ffffff;
+                          margin-left: 48px;
+                          margin-top: 0px;
+                        "
+                      >
+                      <?php echo $title?>
+                      </h5>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-3">
+                        <img src="<?php echo base_url()?>assets/new-assets/ico/duke-university-logo.png" style=" max-width: 70px; margin-top: 36px; max-height: 70px;"/>
+                      </div>
+                      <div class="col-sm-9">
+                        <h4 style="margin-top: 34px; font-family: Lato-Regular;  font-weight: 1000; color: #ad1f24;">
+                            DUKE UNIVERSITY, The Fuqua School of Business
+                        </h4>
+                        <i><p style="font-family: Lato-Italic;">Master of Business Administration</p></i>
+                        <p style="font-family: Lato-Regular; line-height: 1.3;">
+                            Academic: 730 GMAT, Concentrations in Strategy and Marketing
+                            Program for Entrepreneurs(P4E): Building Internet of Things (IoT) gym solution product
+                            Mentored Study Program (MSP): Marketing Plan for Free-Space Optical Broadband product
+                            President of the Culinary Club and Ski and Snowboard Club; MBA Cabinet Social Chai.
+                        </p>
+                        <p style="font-family: Lato-Regular; line-height: 1.3; opacity: 0.7;">Durham, NC</p>
+                        <p style="font-family: Lato-Regular; line-height: 1.3; padding-top: 0px; opacity: 0.7;">May, 2019</p>
+          
+                        <hr style="border-top: 1px dashed #ad1f24" />
+                      </div>
+                    </div>
+          
+                    <div class="row">
+                      <div class="col-sm-3">
+                        <img src="<?php echo base_url()?>assets/new-assets/ico/duke-university-logo.png" style=" max-width: 70px; margin-top: 36px; max-height: 70px;"/>
+                      </div>
+                      <div class="col-sm-9">
+                        <h4 style="margin-top: 34px; font-family: Lato-Regular; font-weight: 1000; color: #ad1f24;">
+                            DUKE UNIVERSITY, Pratt School of Engineering
+                           </h4> 
+                           <i><p style="font-family: Lato-Italic;">Bachelor of Science in Civil Engineering</p></i>
+                           <p style="font-family: Lato-Regular; line-height: 1.3;">
+                             Minor in Economics, Certificate in Energy and the Environment<br/><br/> 
+                           </p> 
+                         <p style="font-family: Lato-Regular; line-height: 1.3; opacity: 0.7;">Durham, NC</p>
+                         <p style="font-family: Lato-Regular; line-height: 1.3; opacity: 0.7;">May, 2012</p> 
+                        <hr style="border-top: 1px dashed #ad1f24" />
+                      </div>
+                    </div>
+          
+                    <div
+                    class="parallelogramMobile"
+                    style="margin-top: 30px; align-items: center; max-height: 50px">
+                    <h3
+                      style=" 
+                        font-family: Lato-Regular;
+                        padding-top: 8px;
+                        color: #ffffff;
+                        margin-left: 48px;
+                        margin-bottom: 0px;
+                      ">
+                      EXPERIENCE
+                    </h3>
+                  </div>
+          
+                  <div class="row"> 
+                    <div class="col-sm-12" style="margin-top: 20px;"> 
+                      <h4 style="margin-top: 34px; font-family: Lato-Italic; font-weight: 800;">
+                        <h4 style="margin-top: 34px; font-family: Lato-Italic; font-weight: 800;">
+                            <i class="circle" style="max-width: 40px; max-height: 40px;"></i>    GILBANE BUILDING COMPANY
+                            </h4>  
+                            <p style="font-family: Lato-Regular; line-height: 1.3;">Gilbane is one of the largest privately-held and family-owned construction companies in the industry.</p> 
+                    </div>
+                  </div> 
+          
+                  <div class="row"> 
+                      <div class="col-sm-12" style="margin-top: 20px;"> 
+                        <h4 style="margin-top: 34px; font-family: Lato-Italic; font-weight: 800;">
+                            <i class="circle" style="max-width: 40px; max-height: 40px;"></i>   Senior Project Engineer, Nutanix Chesterfield Renovation (Durham, NC)
+                          </h4>
+                          <p style="font-family: Lato-Regular; line-height: 1.3;">
+                            Supervised over 60 field personnel, wrote contracts and enforced contractual obligations on a $6MM
+                            Interior Renovation of 160,000 SF at a former Durham Tobacco Factory.<br/><br/>
+                            Developed strategic plan of designs and materials to save over $2MM on what was initially an $8MM
+                            project to meet the client’s budget.<br/><br/>
+                            Collaborated with subcontractors, architects, and the client to minimize costs, negotiating contracts to
+                            work within the budget.<br/><br/>
+                            Completed the project on time and under budget, which facilitated a strong relationship leading to
+                            future work with this client.
+                          </p>  
+                          <p style="font-family: Lato-Regular; line-height: 1.3; opacity: 0.7;">Durham, NC</p>
+                          <p style="font-family: Lato-Regular; line-height: 1.3; opacity: 0.7;">2012 - 2017</p> 
+                      </div>
+                  </div> 
+                  <div class="row"> 
+                      <div class="col-sm-12" style="margin-top: 20px;"> 
+                        <h4 style="margin-top: 34px; font-family: Lato-Italic; font-weight: 800;">
+                            <i class="circle" style="max-width: 40px; max-height: 40px;"></i>   Senior Project Engineer, Google Fiber Storefront Renovations (Atlanta Metro Area, Raleigh-Durham)
+                        </h4>
+                        <p style="font-family: Lato-Regular; line-height: 1.3;">
+                          Managed budgets and schedules, and supervised teams of 30+ field personnel per job for four projects,
+                          each around $2M and 10,000 SF in Georgia and North Carolina.<br/><br/>
+                          Strategically reorganized project responsibilities and collaborated with team to improve dynamic on
+                          initial project, ultimately completing the project with savings, and on schedule.<br/><br/>
+                          Built strong relationship and was awarded three additional projects, securing future work and ensuring
+                          status as a preferred contractor for the Google Real Estate department. 
+                        </p>     
+                      </div>
+                  </div> 
+                  <div class="row"> 
+                      <div class="col-sm-12" style="margin-top: 20px;"> 
+                        <h4 style="margin-top: 34px; font-family: Lato-Italic; font-weight: 800;">
+                            <i class="circle" style="max-width: 40px; max-height: 40px;"></i>    Project Engineer, Duke Powerhouse Renovation (Durham, NC)
+                        </h4>
+                        <p style="font-family: Lato-Regular; line-height: 1.3;">
+                         Supervised 100+ field personnel daily and maintained project financials including monthly cost reporting
+                         and pay applications on a $10MM renovation of a 100-year-old Tobacco Powerhouse in downtown
+                         Durham.<br/><br/>
+                         Minimized cost for a key relationship, and completed project on time and under budget, which led to
+                         the award of three subsequent projects worth ~$65MM
+                        </p>  
+                      </div>
+                  </div> 
+                  <div class="row"> 
+                    <div class="col-sm-12" style="margin-top: 20px;"> 
+                        <h4 style="margin-top: 34px; font-family: Lato-Italic; font-weight: 800;">
+                        <i class="circle" style="max-width: 40px; max-height: 40px;"></i>    Assistant Superintendent, Scotts Ridge Elementary School (Apex, NC)
+                          </h4>
+                          <p style="font-family: Lato-Regular; line-height: 1.3;">
+                           Managed 100+ field personnel daily to drive performance and schedule, and ensure quality work on
+                           $35MM New Elementary School for Wake County Public Schools.<br/><br/>
+                           Assisted Senior Project Engineer with financial responsibilities and writing contracts.<br/><br/>
+                           Led team to on-time and below-budget completion, winning five additional Wake County Public School
+                           System projects.
+                          </p> 
+                    </div>
+                </div> 
+                <div class="row"> 
+                    <div class="col-sm-12" style="margin-top: 20px;"> 
+                        <h4 style="margin-top: 34px; font-family: Lato-Italic; font-weight: 800;">
+                          <i class="circle" style="max-width: 40px; max-height: 40px;"></i>   Office Engineer, Veteran’s Affairs Hospital (Greenville, NC)
+                          </h4>
+                          <p style="font-family: Lato-Regular; line-height: 1.3;">
+                           Negotiated bids and wrote contracts for new subcontractors, building models to evaluate bids and
+                           provided estimating backup to support or reject bids on $40MM New Veteran’s Affairs Hospital for a
+                           private developer to be leased by the VA.<br/><br/>
+                           Minimized contractual construction costs and saved around $5MM of the final project costs, which led
+                           to an earned a profit of $1MM on the project.
+                        </p>  
+                    </div>
+                </div> 
+                  </div>  
+            
+            <?php } ?>
+          </div>
+        </div>
+    </section>
+
+  <footer
+      class="section bg-gradient"
+      style="margin-bottom: 0px; max-height: 25rem" >
+      <div class="bg-bottom bg-bottom-bottom"></div>
+      <!--Content -->
+      <div class="container">
+        <div class="row align-self-center">
+          <!-- </div> -->
+          <div class="col-md align-items-center text-center">
+            <!-- Links -->
+            <ul class="list-unstyled list-inline text-md-center">
+              <li class="list-inline-item mr-2">
+                <a href="#" class="text-white">
+                  <img
+                    src="assets/ico/whiteLogo.png"
+                    style="max-width: 110px; max-width: 110px"
+                  />
+                </a>
+              </li>
+            </ul>
+            <ul class="list-unstyled list-inline text-md-center">
+              <li class="list-inline-item mr-2">
+                <a href="#" class="text-white">
+                  <small style="font-family: 'OttomatBold'">
+                    &copy; Copyright <span class="current-year"></span> Abranova
+                    Inc. All rights reserved.
+                  </small>
+                </a>
+              </li>
+            </ul>
+            <ul class="list-unstyled list-inline text-md-center">
+              <li class="list-inline-item mr-2">
+                <a href="#" class="text-white">
+                  <h5 style="font-family: 'OttomatBold'; color: #ffffff">
+                    Follow us for the latest opportunity:&nbsp;&nbsp;<a href="#"
+                      ><i
+                        class="fab fa-youtube"
+                        style="color: aliceblue"
+                      ></i></a
+                    >&nbsp;&nbsp;
+                    <a href="#"
+                      ><i class="fab fa-facebook" style="color: aliceblue"></i
+                    ></a>
+                    &nbsp;&nbsp;
+                    <a href="#"
+                      ><i class="fab fa-instagram" style="color: aliceblue"></i
+                    ></a>
+                    &nbsp;&nbsp;<a href="#"
+                      ><i
+                        class="fab fa-twitter"
+                        style="color: aliceblue"
+                      ></i></a
+                    >&nbsp;&nbsp;<a href="#"
+                      ><i class="fab fa-linkedin" style="color: aliceblue"></i
+                    ></a>
+                  </h5>
+                </a>
+              </li>
+            </ul>
+            <ul class="list-unstyled text-md-center">
+              <li>
+                <p
+                  style="
+                    color: aliceblue;
+                    font-style: normal;
+                    font-family: 'OttomatBold';
+                    color: #ffffff;
+                    font-weight: 100;
+                  "
+                >
+                  Abranova Inc. 400 West Main Street, Suite# 614 Durham, NC
+                  27701 USA (919) 597-0223
+                </p>
+              </li>
+            </ul>
+            <ul class="list-unstyled text-md-center">
+              <li>
+                <p
+                  style="
+                    color: aliceblue;
+                    font-style: normal;
+                    font-family: 'OttomatBold';
+                    color: #ffffff;
+                    font-weight: 100;
+                  "
+                >
+                  Terms and conditions&nbsp; | &nbsp;Privacy policy&nbsp; |
+                  &nbsp;Contact us
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/libs/jquery/dist/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnKt8_N4-FKOnhI_pSaDL7g_g-XI1-R9E"></script>
+
+    <!-- Plugins JS -->
+    <script src="assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/libs/flickity/dist/flickity.pkgd.min.js"></script>
+    <script src="assets/libs/flickity-fade/flickity-fade.js"></script>
+    <script src="assets/libs/jquery-parallax.js/parallax.min.js"></script>
+    <script src="assets/libs/waypoints/lib/jquery.waypoints.min.js"></script>
+    <script src="assets/libs/waypoints/lib/shortcuts/inview.min.js"></script>
+    <script src="assets/libs/fullpage.js/vendors/scrolloverflow.min.js"></script>
+    <script src="assets/libs/fullpage.js/dist/fullpage.min.js"></script>
+    <script src="assets/libs/highlightjs/highlight.pack.min.js"></script>
+
+    <!-- Theme JS -->
+    <script src="assets/js/theme.min.js"></script>
+    <script src="assets/js/slider.js"></script>
+  </body>
+</html>

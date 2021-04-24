@@ -11823,6 +11823,20 @@ h1 {
   background-position: center center;
   background-size: cover;
 }
+
+.bg-titan {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 800px; 
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: auto;
+}
+
 .bg-overlay {
   position: absolute;
   top: 0;
@@ -12930,3 +12944,8 @@ h1 {
         display: block;
     }
   }
+
+  .nopadding {
+    padding: 0 !important;
+    margin: 0 !important;
+ }
